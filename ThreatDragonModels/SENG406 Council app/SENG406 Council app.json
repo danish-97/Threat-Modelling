@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "1a3fe98b-1b49-4da9-ae8c-6e99978bf434",
             "zIndex": 1,
+            "id": "1a3fe98b-1b49-4da9-ae8c-6e99978bf434",
             "data": {
               "type": "tm.Process",
               "name": "Process",
@@ -66,8 +66,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "431cfbc8-b891-41c5-a348-9459944e373f",
             "zIndex": 2,
+            "id": "431cfbc8-b891-41c5-a348-9459944e373f",
             "data": {
               "type": "tm.Process",
               "name": "Process",
@@ -98,8 +98,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "eba9f244-75c6-4888-9cc1-5e5889897a89",
             "zIndex": 3,
+            "id": "eba9f244-75c6-4888-9cc1-5e5889897a89",
             "data": {
               "type": "tm.Actor",
               "name": "Actor",
