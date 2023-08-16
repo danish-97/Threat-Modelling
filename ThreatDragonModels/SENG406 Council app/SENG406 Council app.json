@@ -510,7 +510,52 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Document\n request",
+              "name": "Additional \ndocuments",
+              "description": "Additional documents or clarifications requested by the council member",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "23cd50da-762c-4636-b511-88394cfb725d",
+            "source": {
+              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+            },
+            "target": {
+              "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
+            },
+            "vertices": [
+              {
+                "x": 330,
+                "y": 240
+              }
+            ],
+            "labels": [
+              "Additional \ndocuments"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Additional\ndocument\n request",
               "description": "Call or email to the applicant to request additional documents or clarifications",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -528,7 +573,7 @@
               "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
             },
             "labels": [
-              "Document\n request"
+              "Additional\ndocument\n request"
             ],
             "vertices": [
               {
@@ -555,8 +600,8 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Additional \ndocuments",
-              "description": "Additional documents or clarifications requested by the council member",
+              "name": "Council members",
+              "description": "Name of the staff member in charge of a specific application",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "protocol": "",
@@ -565,21 +610,15 @@
               "hasOpenThreats": false,
               "threats": []
             },
-            "id": "23cd50da-762c-4636-b511-88394cfb725d",
+            "id": "b872d817-6d74-4464-8471-b578fa959d87",
             "source": {
-              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+              "cell": "9785b037-ebae-451d-8dd1-00e9a0849f55"
             },
             "target": {
-              "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
+              "cell": "888817d4-5863-4d08-a250-a3a96c481afe"
             },
-            "vertices": [
-              {
-                "x": 330,
-                "y": 240
-              }
-            ],
             "labels": [
-              "Additional \ndocuments"
+              "Council members"
             ]
           },
           {
@@ -726,6 +765,46 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 870,
+              "y": 500
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "User database"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "9785b037-ebae-451d-8dd1-00e9a0849f55",
+            "zIndex": 15,
+            "data": {
+              "type": "tm.Store",
+              "name": "User database",
+              "description": "Database containing the users of the application",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
               "hasOpenThreats": false,
               "threats": []
             }
