@@ -27,7 +27,7 @@
           {
             "position": {
               "x": 320,
-              "y": 180
+              "y": 110
             },
             "size": {
               "width": 112.5,
@@ -94,16 +94,16 @@
           },
           {
             "position": {
-              "x": 820,
-              "y": 300
+              "x": 825,
+              "y": 311
             },
             "size": {
-              "width": 120,
-              "height": 120
+              "width": 90,
+              "height": 90
             },
             "attrs": {
               "text": {
-                "text": "Application search"
+                "text": "Application \nsearch"
               },
               "body": {
                 "stroke": "#333333",
@@ -117,7 +117,7 @@
             "zIndex": 3,
             "data": {
               "type": "tm.Process",
-              "name": "Application search",
+              "name": "Application \nsearch",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -493,6 +493,96 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Document\n request",
+              "description": "Call or email to the applicant to request additional documents or clarifications",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "3bb75bd1-f222-41a9-b016-131acd8ddbf6",
+            "source": {
+              "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
+            },
+            "target": {
+              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+            },
+            "labels": [
+              "Document\n request"
+            ],
+            "vertices": [
+              {
+                "x": 430,
+                "y": 250
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Additional \ndocuments",
+              "description": "Additional documents or clarifications requested by the council member",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "23cd50da-762c-4636-b511-88394cfb725d",
+            "source": {
+              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+            },
+            "target": {
+              "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
+            },
+            "vertices": [
+              {
+                "x": 330,
+                "y": 240
+              }
+            ],
+            "labels": [
+              "Additional \ndocuments"
+            ]
+          },
+          {
             "position": {
               "x": 1160,
               "y": 261
@@ -599,6 +689,40 @@
               "type": "tm.Process",
               "name": "Application \ncreation",
               "description": "Used to create the application",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 500,
+              "y": 100
+            },
+            "size": {
+              "width": 80,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Application \nreview"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "b79aa5bf-4764-481c-bc51-a48032442827",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Process",
+              "name": "Application \nreview",
+              "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
