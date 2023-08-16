@@ -91,6 +91,40 @@
               "hasOpenThreats": false,
               "threats": []
             }
+          },
+          {
+            "position": {
+              "x": 669,
+              "y": 180
+            },
+            "size": {
+              "width": 120,
+              "height": 120
+            },
+            "attrs": {
+              "text": {
+                "text": "Application search"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "888817d4-5863-4d08-a250-a3a96c481afe",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Process",
+              "name": "Application search",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": []
+            }
           }
         ],
         "description": "A STRIDE diagram showcasing the threat model of the process of applying for a building consent application."
