@@ -166,6 +166,129 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Application details",
+              "description": "This data contains the required supporting documents and user information for a particular application",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "63c08ccc-8658-4ef2-8411-b33652c206ba",
+            "source": {
+              "cell": "5acb9395-c038-4da2-9515-f9d20103fcc3"
+            },
+            "target": {
+              "cell": "888817d4-5863-4d08-a250-a3a96c481afe"
+            },
+            "labels": [
+              "Application details"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Supporting documents",
+              "description": "This contains all the required documents for a particular application",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "0b1184c4-0a91-42dc-bca9-901491fd4514",
+            "source": {
+              "cell": "ed78b71e-4896-448e-b9f5-1d194e789dcd"
+            },
+            "target": {
+              "cell": "888817d4-5863-4d08-a250-a3a96c481afe"
+            },
+            "labels": [
+              "Supporting documents"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Application data",
+              "description": "Contains all of an applications documents and data.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "ade79b76-a396-484e-96a3-5cfa1521a430",
+            "source": {
+              "cell": "888817d4-5863-4d08-a250-a3a96c481afe"
+            },
+            "target": {
+              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+            },
+            "vertices": [
+              {
+                "x": 540,
+                "y": 400
+              }
+            ],
+            "labels": [
+              "Application data"
+            ]
+          },
+          {
             "position": {
               "x": 1160,
               "y": 261
