@@ -187,8 +187,8 @@
           },
           {
             "position": {
-              "x": 300,
-              "y": -40
+              "x": 683.5,
+              "y": -100
             },
             "size": {
               "width": 112.5,
@@ -480,86 +480,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Submits an\n application",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "b87a5e34-9f66-49dd-9343-13ed1c719557",
-            "source": {
-              "x": 413,
-              "y": -20
-            },
-            "target": {
-              "cell": "00e963fc-4a05-4b60-ae81-3f598744c485"
-            },
-            "labels": [
-              "Submits an\n application"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Application\ndetails",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "d685b542-0572-4702-90c2-b46ee779ee3b",
-            "source": {
-              "cell": "3a262796-b9d9-488a-938d-0ae1de683a4e"
-            },
-            "target": {
-              "x": 570,
-              "y": -48
-            },
-            "labels": [
-              "Application\ndetails"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Token",
               "description": "",
               "outOfScope": false,
@@ -579,52 +499,6 @@
             },
             "labels": [
               "Token"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Picked up by a\ncouncil member",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "07ccfe1b-c236-40e8-b385-b61690ea8991",
-            "source": {
-              "x": 600,
-              "y": 0
-            },
-            "target": {
-              "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
-            },
-            "vertices": [
-              {
-                "x": 520,
-                "y": 100
-              }
-            ],
-            "labels": [
-              "Picked up by a\ncouncil member"
             ]
           },
           {
@@ -709,8 +583,7 @@
               "cell": "b79aa5bf-4764-481c-bc51-a48032442827"
             },
             "target": {
-              "x": 1040,
-              "y": -10
+              "cell": "6cde62c1-a9bf-4704-9410-78ebea6f79a7"
             },
             "vertices": [
               {
@@ -723,9 +596,168 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Submits an\n application",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "b87a5e34-9f66-49dd-9343-13ed1c719557",
+            "source": {
+              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+            },
+            "target": {
+              "cell": "00e963fc-4a05-4b60-ae81-3f598744c485"
+            },
+            "labels": [
+              "Submits an\n application"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Application\ndetails",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "d685b542-0572-4702-90c2-b46ee779ee3b",
+            "source": {
+              "cell": "3a262796-b9d9-488a-938d-0ae1de683a4e"
+            },
+            "target": {
+              "cell": "00e963fc-4a05-4b60-ae81-3f598744c485"
+            },
+            "labels": [
+              "Application\ndetails"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Picked up by a\ncouncil member",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "07ccfe1b-c236-40e8-b385-b61690ea8991",
+            "source": {
+              "cell": "00e963fc-4a05-4b60-ae81-3f598744c485"
+            },
+            "target": {
+              "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
+            },
+            "vertices": [
+              {
+                "x": 520,
+                "y": 100
+              }
+            ],
+            "labels": [
+              "Picked up by a\ncouncil member"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "009b7f12-8041-4dd2-8a87-42f3e8d9aa4b",
+            "source": {
+              "cell": "6cde62c1-a9bf-4704-9410-78ebea6f79a7"
+            },
+            "target": {
+              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+            }
+          },
+          {
             "position": {
-              "x": 534.9999999999991,
-              "y": -60
+              "x": 382.5,
+              "y": -70
             },
             "size": {
               "width": 80,
@@ -1108,7 +1140,7 @@
           },
           {
             "position": {
-              "x": 330,
+              "x": 490,
               "y": -190
             },
             "size": {
@@ -1142,6 +1174,40 @@
               "storesCredentials": false,
               "isEncrypted": false,
               "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1040,
+              "y": -50
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Email system"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "6cde62c1-a9bf-4704-9410-78ebea6f79a7",
+            "zIndex": 26,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Email system",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "providesAuthentication": false,
               "hasOpenThreats": false,
               "threats": []
             }
