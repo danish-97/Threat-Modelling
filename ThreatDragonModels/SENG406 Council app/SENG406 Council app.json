@@ -26,19 +26,24 @@
         "cells": [
           {
             "position": {
-              "x": 1310,
-              "y": 260
+              "x": 1040,
+              "y": 170
             },
             "size": {
-              "width": 128,
-              "height": 60
+              "width": 480,
+              "height": 225.00000000000003
             },
             "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Admin application system"
+              }
+            },
             "id": "888879f2-af1c-40ec-a9fb-02b626429f77",
             "zIndex": -1,
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Trust Boundary",
+              "name": "Admin application system",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -165,6 +170,98 @@
                 }
               ]
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Staff to delete",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "bd2e6b8c-60cb-4dda-a0b0-5ee4431d3fca",
+            "source": {
+              "x": 1140,
+              "y": 226
+            },
+            "target": {
+              "cell": "86eafdfa-eedd-49e9-8027-6d47b3ec3bf8"
+            },
+            "vertices": [
+              {
+                "x": 1170,
+                "y": 226
+              }
+            ],
+            "labels": [
+              "Staff to delete"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Staff details",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "be5499c9-13f9-4c77-85d4-8eec57a5aaa4",
+            "source": {
+              "x": 1128,
+              "y": 253
+            },
+            "target": {
+              "cell": "724c6052-db0f-4d6a-94c2-fa73196f7756"
+            },
+            "vertices": [
+              {
+                "x": 1177.5,
+                "y": 290
+              }
+            ],
+            "labels": [
+              "Staff details"
+            ]
           },
           {
             "position": {
@@ -433,6 +530,148 @@
                   "score": ""
                 }
               ]
+            }
+          },
+          {
+            "position": {
+              "x": 1060,
+              "y": 211.00000000000009
+            },
+            "size": {
+              "width": 80,
+              "height": 42.666666666666664
+            },
+            "attrs": {
+              "text": {
+                "text": "Admin"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "da8222e8-9793-4f75-b84c-b9c3d59e6050",
+            "zIndex": 18,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Admin",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "providesAuthentication": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1271,
+              "y": 211
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Remove\nStaff"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "86eafdfa-eedd-49e9-8027-6d47b3ec3bf8",
+            "zIndex": 19,
+            "data": {
+              "type": "tm.Process",
+              "name": "Remove\nStaff",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1180,
+              "y": 310
+            },
+            "size": {
+              "width": 50,
+              "height": 50
+            },
+            "attrs": {
+              "text": {
+                "text": "Add\nStaff"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "724c6052-db0f-4d6a-94c2-fa73196f7756",
+            "zIndex": 20,
+            "data": {
+              "type": "tm.Process",
+              "name": "Add\nStaff",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1363,
+              "y": 271
+            },
+            "size": {
+              "width": 100,
+              "height": 50
+            },
+            "attrs": {
+              "text": {
+                "text": "Staff Users \nDatabase"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "1c3ee008-5d88-4cad-9d66-4165dea3e0d8",
+            "zIndex": 21,
+            "data": {
+              "type": "tm.Store",
+              "name": "Staff Users \nDatabase",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
             }
           }
         ],
