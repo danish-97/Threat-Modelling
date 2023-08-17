@@ -26,7 +26,7 @@
         "cells": [
           {
             "position": {
-              "x": 1040,
+              "x": 1030,
               "y": 170
             },
             "size": {
@@ -264,98 +264,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Staff to delete",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "bd2e6b8c-60cb-4dda-a0b0-5ee4431d3fca",
-            "labels": [
-              "Staff to delete"
-            ],
-            "source": {
-              "x": 1140,
-              "y": 226
-            },
-            "target": {
-              "cell": "86eafdfa-eedd-49e9-8027-6d47b3ec3bf8"
-            },
-            "vertices": [
-              {
-                "x": 1170,
-                "y": 226
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Staff details",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "be5499c9-13f9-4c77-85d4-8eec57a5aaa4",
-            "labels": [
-              "Staff details"
-            ],
-            "source": {
-              "x": 1128,
-              "y": 253
-            },
-            "target": {
-              "cell": "724c6052-db0f-4d6a-94c2-fa73196f7756"
-            },
-            "vertices": [
-              {
-                "x": 1177.5,
-                "y": 290
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Remove staff details",
               "description": "",
               "outOfScope": false,
@@ -382,46 +290,6 @@
                 "y": 244
               }
             ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Add staff details",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "10993266-113f-4572-9e68-b6328300a2e3",
-            "labels": [
-              "Add staff details"
-            ],
-            "source": {
-              "x": 1230,
-              "y": 331
-            },
-            "target": {
-              "cell": "1c3ee008-5d88-4cad-9d66-4165dea3e0d8"
-            }
           },
           {
             "shape": "flow",
@@ -1143,6 +1011,180 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Add staff details",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "10993266-113f-4572-9e68-b6328300a2e3",
+            "labels": [
+              "Add staff details"
+            ],
+            "source": {
+              "cell": "724c6052-db0f-4d6a-94c2-fa73196f7756"
+            },
+            "target": {
+              "cell": "1c3ee008-5d88-4cad-9d66-4165dea3e0d8"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Staff details",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "be5499c9-13f9-4c77-85d4-8eec57a5aaa4",
+            "labels": [
+              "Staff details"
+            ],
+            "source": {
+              "cell": "da8222e8-9793-4f75-b84c-b9c3d59e6050"
+            },
+            "target": {
+              "cell": "724c6052-db0f-4d6a-94c2-fa73196f7756"
+            },
+            "vertices": [
+              {
+                "x": 1177.5,
+                "y": 290
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Staff to delete",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "bd2e6b8c-60cb-4dda-a0b0-5ee4431d3fca",
+            "labels": [
+              "Staff to delete"
+            ],
+            "source": {
+              "cell": "da8222e8-9793-4f75-b84c-b9c3d59e6050"
+            },
+            "target": {
+              "cell": "86eafdfa-eedd-49e9-8027-6d47b3ec3bf8"
+            },
+            "vertices": [
+              {
+                "x": 1170,
+                "y": 226
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Generate credentials",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "654a71d5-4807-4b27-9492-bcb5483ea28d",
+            "source": {
+              "cell": "724c6052-db0f-4d6a-94c2-fa73196f7756"
+            },
+            "target": {
+              "cell": "7285e0b4-8556-49f1-b968-432177da5988"
+            },
+            "vertices": [
+              {
+                "x": 1000,
+                "y": 320
+              }
+            ],
+            "labels": [
+              "Generate credentials"
+            ]
+          },
+          {
             "position": {
               "x": 359.9999999999991,
               "y": -210
@@ -1319,7 +1361,7 @@
           {
             "position": {
               "x": 1060,
-              "y": 211.00000000000009
+              "y": 207.3333333333336
             },
             "size": {
               "width": 80,
@@ -1352,8 +1394,8 @@
           },
           {
             "position": {
-              "x": 1271,
-              "y": 211
+              "x": 1291,
+              "y": 207.3333333333336
             },
             "size": {
               "width": 60,
@@ -1386,8 +1428,8 @@
           },
           {
             "position": {
-              "x": 1180,
-              "y": 310
+              "x": 1090,
+              "y": 325
             },
             "size": {
               "width": 50,
