@@ -39,8 +39,8 @@
                 "text": "Admin application system"
               }
             },
-            "id": "888879f2-af1c-40ec-a9fb-02b626429f77",
             "zIndex": -1,
+            "id": "888879f2-af1c-40ec-a9fb-02b626429f77",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Admin application system",
@@ -64,8 +64,8 @@
                 "text": "Staff Application System"
               }
             },
-            "id": "b0e001ce-1e70-4d20-9c00-944303e7c42a",
             "zIndex": -1,
+            "id": "b0e001ce-1e70-4d20-9c00-944303e7c42a",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Staff Application System",
@@ -225,6 +225,9 @@
               "threats": []
             },
             "id": "bd2e6b8c-60cb-4dda-a0b0-5ee4431d3fca",
+            "labels": [
+              "Staff to delete"
+            ],
             "source": {
               "x": 1140,
               "y": 226
@@ -237,9 +240,6 @@
                 "x": 1170,
                 "y": 226
               }
-            ],
-            "labels": [
-              "Staff to delete"
             ]
           },
           {
@@ -271,6 +271,9 @@
               "threats": []
             },
             "id": "be5499c9-13f9-4c77-85d4-8eec57a5aaa4",
+            "labels": [
+              "Staff details"
+            ],
             "source": {
               "x": 1128,
               "y": 253
@@ -283,9 +286,6 @@
                 "x": 1177.5,
                 "y": 290
               }
-            ],
-            "labels": [
-              "Staff details"
             ]
           },
           {
@@ -317,6 +317,9 @@
               "threats": []
             },
             "id": "4b5a1b4a-b80e-4fb0-96d1-80eae5b598a0",
+            "labels": [
+              "Remove staff details"
+            ],
             "source": {
               "cell": "86eafdfa-eedd-49e9-8027-6d47b3ec3bf8"
             },
@@ -328,9 +331,6 @@
                 "x": 1380,
                 "y": 244
               }
-            ],
-            "labels": [
-              "Remove staff details"
             ]
           },
           {
@@ -362,15 +362,93 @@
               "threats": []
             },
             "id": "10993266-113f-4572-9e68-b6328300a2e3",
+            "labels": [
+              "Add staff details"
+            ],
             "source": {
               "x": 1230,
               "y": 331
             },
             "target": {
               "cell": "1c3ee008-5d88-4cad-9d66-4165dea3e0d8"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Credentials",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "52a22602-918d-4d77-a63e-5a568016a01e",
+            "source": {
+              "cell": "7285e0b4-8556-49f1-b968-432177da5988"
+            },
+            "target": {
+              "cell": "6c51a5e7-ef0b-4681-a83e-8418175befe4"
             },
             "labels": [
-              "Add staff details"
+              "Credentials"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login\ntoken",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "d3dde871-db7a-4054-920d-31cd57cc243f",
+            "source": {
+              "cell": "6ae1b6c8-4ceb-4010-a1c1-79d568dc06e0"
+            },
+            "target": {
+              "cell": "6c51a5e7-ef0b-4681-a83e-8418175befe4"
+            },
+            "labels": [
+              "Login\ntoken"
             ]
           },
           {
@@ -602,8 +680,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "a1b8c9fd-25c6-4bc2-89e6-c1ff04cce790",
             "zIndex": 17,
+            "id": "a1b8c9fd-25c6-4bc2-89e6-c1ff04cce790",
             "data": {
               "type": "tm.Actor",
               "name": "Reviewers",
@@ -663,8 +741,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "da8222e8-9793-4f75-b84c-b9c3d59e6050",
             "zIndex": 18,
+            "id": "da8222e8-9793-4f75-b84c-b9c3d59e6050",
             "data": {
               "type": "tm.Actor",
               "name": "Admin",
@@ -697,8 +775,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "86eafdfa-eedd-49e9-8027-6d47b3ec3bf8",
             "zIndex": 19,
+            "id": "86eafdfa-eedd-49e9-8027-6d47b3ec3bf8",
             "data": {
               "type": "tm.Process",
               "name": "Remove\nStaff",
@@ -731,8 +809,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "724c6052-db0f-4d6a-94c2-fa73196f7756",
             "zIndex": 20,
+            "id": "724c6052-db0f-4d6a-94c2-fa73196f7756",
             "data": {
               "type": "tm.Process",
               "name": "Add\nStaff",
@@ -805,8 +883,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "6ae1b6c8-4ceb-4010-a1c1-79d568dc06e0",
             "zIndex": 22,
+            "id": "6ae1b6c8-4ceb-4010-a1c1-79d568dc06e0",
             "data": {
               "type": "tm.Actor",
               "name": "Council\nmember",
@@ -820,8 +898,8 @@
           },
           {
             "position": {
-              "x": 886,
-              "y": 271
+              "x": 896,
+              "y": 276
             },
             "size": {
               "width": 50,
@@ -839,8 +917,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "6c51a5e7-ef0b-4681-a83e-8418175befe4",
             "zIndex": 23,
+            "id": "6c51a5e7-ef0b-4681-a83e-8418175befe4",
             "data": {
               "type": "tm.Process",
               "name": "Login",
@@ -848,6 +926,40 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 970,
+              "y": 40.00000000000018
+            },
+            "size": {
+              "width": 100,
+              "height": 53.33333333333333
+            },
+            "attrs": {
+              "text": {
+                "text": "Unauth Council\nMember"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "7285e0b4-8556-49f1-b968-432177da5988",
+            "zIndex": 24,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Unauth Council\nMember",
+              "description": "A council member who is not logged in",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "providesAuthentication": false,
               "hasOpenThreats": false,
               "threats": []
             }
