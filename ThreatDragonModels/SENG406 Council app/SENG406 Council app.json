@@ -51,6 +51,31 @@
           },
           {
             "position": {
+              "x": 510,
+              "y": 174.68750000000006
+            },
+            "size": {
+              "width": 470,
+              "height": 220.3125
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Staff Application System"
+              }
+            },
+            "id": "b0e001ce-1e70-4d20-9c00-944303e7c42a",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Staff Application System",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
               "x": 150,
               "y": 30.000000000000075
             },
@@ -755,6 +780,74 @@
               "storesCredentials": false,
               "isEncrypted": false,
               "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 750,
+              "y": 211.00000000000009
+            },
+            "size": {
+              "width": 70,
+              "height": 37.33333333333333
+            },
+            "attrs": {
+              "text": {
+                "text": "Council\nmember"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "6ae1b6c8-4ceb-4010-a1c1-79d568dc06e0",
+            "zIndex": 22,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Council\nmember",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "providesAuthentication": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 886,
+              "y": 271
+            },
+            "size": {
+              "width": 50,
+              "height": 50
+            },
+            "attrs": {
+              "text": {
+                "text": "Login"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "6c51a5e7-ef0b-4681-a83e-8418175befe4",
+            "zIndex": 23,
+            "data": {
+              "type": "tm.Process",
+              "name": "Login",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
               "hasOpenThreats": false,
               "threats": []
             }
