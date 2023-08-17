@@ -862,6 +862,44 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "19abfb3d-e2a0-47bf-afe4-a9a0731b87fc",
+            "source": {
+              "x": 533,
+              "y": 151
+            },
+            "target": {
+              "x": 633,
+              "y": 251
+            }
+          },
+          {
             "position": {
               "x": 382.5,
               "y": -70
@@ -1330,7 +1368,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Additional document"
+                "text": "Additional\ndocument\nrequest"
               },
               "body": {
                 "stroke": "#333333",
@@ -1344,7 +1382,7 @@
             "zIndex": 27,
             "data": {
               "type": "tm.Process",
-              "name": "Additional document",
+              "name": "Additional\ndocument\nrequest",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
