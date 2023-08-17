@@ -51,12 +51,12 @@
           },
           {
             "position": {
-              "x": 510,
-              "y": 174.68750000000006
+              "x": 327.3333333333331,
+              "y": 105
             },
             "size": {
-              "width": 470,
-              "height": 220.3125
+              "width": 618.6666666666669,
+              "height": 290
             },
             "shape": "trust-boundary-box",
             "attrs": {
@@ -76,8 +76,58 @@
           },
           {
             "position": {
-              "x": 150,
-              "y": 30.000000000000075
+              "x": 239.9999999999991,
+              "y": -239.99999999999812
+            },
+            "size": {
+              "width": 670,
+              "height": 314.06250000000006
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "General Application System"
+              }
+            },
+            "id": "11f4de20-4ef5-4d5c-af62-c9bbefd8452f",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "General Application System",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 950,
+              "y": -237.6562499999981
+            },
+            "size": {
+              "width": 660,
+              "height": 309.375
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Email System"
+              }
+            },
+            "id": "ec5bcd1c-36e3-4f7f-b5a2-87dd9ad25005",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Email System",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 580,
+              "y": 170
             },
             "size": {
               "width": 80,
@@ -137,8 +187,8 @@
           },
           {
             "position": {
-              "x": 150,
-              "y": 271
+              "x": 300,
+              "y": -40
             },
             "size": {
               "width": 112.5,
@@ -430,7 +480,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Login\ntoken",
+              "name": "Submits an\n application",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -440,21 +490,101 @@
               "hasOpenThreats": false,
               "threats": []
             },
-            "id": "d3dde871-db7a-4054-920d-31cd57cc243f",
+            "id": "b87a5e34-9f66-49dd-9343-13ed1c719557",
             "source": {
-              "cell": "6ae1b6c8-4ceb-4010-a1c1-79d568dc06e0"
+              "x": 413,
+              "y": -20
             },
             "target": {
-              "cell": "6c51a5e7-ef0b-4681-a83e-8418175befe4"
+              "cell": "00e963fc-4a05-4b60-ae81-3f598744c485"
             },
             "labels": [
-              "Login\ntoken"
+              "Submits an\n application"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Application\ndetails",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "d685b542-0572-4702-90c2-b46ee779ee3b",
+            "source": {
+              "cell": "3a262796-b9d9-488a-938d-0ae1de683a4e"
+            },
+            "target": {
+              "x": 570,
+              "y": -48
+            },
+            "labels": [
+              "Application\ndetails"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Token",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "1f2fdd92-62b4-4436-8fca-7d6fa7b1fd2c",
+            "source": {
+              "cell": "6c51a5e7-ef0b-4681-a83e-8418175befe4"
+            },
+            "target": {
+              "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
+            },
+            "labels": [
+              "Token"
             ]
           },
           {
             "position": {
-              "x": 430,
-              "y": -90
+              "x": 534.9999999999991,
+              "y": -60
             },
             "size": {
               "width": 80,
@@ -566,12 +696,12 @@
           },
           {
             "position": {
-              "x": 600,
-              "y": -20
+              "x": 544.9999999999991,
+              "y": 271
             },
             "size": {
-              "width": 80,
-              "height": 80
+              "width": 70,
+              "height": 70
             },
             "attrs": {
               "text": {
@@ -627,42 +757,8 @@
           },
           {
             "position": {
-              "x": 750,
-              "y": -140
-            },
-            "size": {
-              "width": 60,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Staff login"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "zIndex": 16,
-            "id": "b8cabe90-0ffa-44a9-932b-6206092d613b",
-            "data": {
-              "type": "tm.Process",
-              "name": "Staff login",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 775,
-              "y": -10
+              "x": 412.5,
+              "y": 193.66666666666677
             },
             "size": {
               "width": 70,
@@ -864,42 +960,8 @@
           },
           {
             "position": {
-              "x": 750,
-              "y": 211.00000000000009
-            },
-            "size": {
-              "width": 70,
-              "height": 37.33333333333333
-            },
-            "attrs": {
-              "text": {
-                "text": "Council\nmember"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "zIndex": 22,
-            "id": "6ae1b6c8-4ceb-4010-a1c1-79d568dc06e0",
-            "data": {
-              "type": "tm.Actor",
-              "name": "Council\nmember",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "providesAuthentication": false,
-              "hasOpenThreats": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 896,
-              "y": 276
+              "x": 796,
+              "y": 212.66666666666666
             },
             "size": {
               "width": 50,
@@ -932,8 +994,8 @@
           },
           {
             "position": {
-              "x": 970,
-              "y": 40.00000000000018
+              "x": 980,
+              "y": 90.00000000000017
             },
             "size": {
               "width": 100,
@@ -960,6 +1022,46 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 330,
+              "y": -190
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Application details\n datastore"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "3a262796-b9d9-488a-938d-0ae1de683a4e",
+            "zIndex": 25,
+            "data": {
+              "type": "tm.Store",
+              "name": "Application details\n datastore",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
               "hasOpenThreats": false,
               "threats": []
             }
