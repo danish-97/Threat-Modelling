@@ -725,6 +725,43 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "007094e4-fa70-4611-8600-b6a456a5e1aa",
+            "source": {
+              "cell": "a1b8c9fd-25c6-4bc2-89e6-c1ff04cce790"
+            },
+            "target": {
+              "x": 790,
+              "y": 120
+            }
+          },
+          {
             "position": {
               "x": 1160,
               "y": 261
