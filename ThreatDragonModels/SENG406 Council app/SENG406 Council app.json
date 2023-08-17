@@ -101,7 +101,7 @@
           },
           {
             "position": {
-              "x": 940,
+              "x": 950,
               "y": -237.6562499999981
             },
             "size": {
@@ -126,12 +126,12 @@
           },
           {
             "position": {
-              "x": 580,
-              "y": 170
+              "x": 412.5,
+              "y": 143.3333333333336
             },
             "size": {
-              "width": 80,
-              "height": 42.666666666666664
+              "width": 120,
+              "height": 64
             },
             "attrs": {
               "text": {
@@ -538,12 +538,16 @@
             },
             "vertices": [
               {
-                "x": 540,
-                "y": 191.33
+                "x": 440,
+                "y": 220
               },
               {
-                "x": 490,
-                "y": 220
+                "x": 440,
+                "y": 240
+              },
+              {
+                "x": 410,
+                "y": 260
               }
             ],
             "labels": [
@@ -568,7 +572,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Approves the \napplication",
+              "name": "Generate decision\noutcome",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -587,12 +591,12 @@
             },
             "vertices": [
               {
-                "x": 710,
-                "y": 260
+                "x": 750,
+                "y": 339.5
               }
             ],
             "labels": [
-              "Approves the \napplication"
+              "Generate decision\noutcome"
             ]
           },
           {
@@ -736,7 +740,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Decision outcome\nemail",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -752,7 +756,110 @@
             },
             "target": {
               "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
-            }
+            },
+            "labels": [
+              "Decision outcome\nemail"
+            ],
+            "vertices": [
+              {
+                "x": 930,
+                "y": -40
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Generate Application id",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "1478aa17-8499-4710-bc61-631051c3c468",
+            "source": {
+              "cell": "00e963fc-4a05-4b60-ae81-3f598744c485"
+            },
+            "target": {
+              "cell": "6cde62c1-a9bf-4704-9410-78ebea6f79a7"
+            },
+            "vertices": [
+              {
+                "x": 700,
+                "y": 30
+              },
+              {
+                "x": 960,
+                "y": -20
+              }
+            ],
+            "labels": [
+              "Generate Application id"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Send application id",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "57d0cab2-7540-4739-965f-f211b5c7ccdb",
+            "source": {
+              "cell": "6cde62c1-a9bf-4704-9410-78ebea6f79a7"
+            },
+            "target": {
+              "cell": "00e963fc-4a05-4b60-ae81-3f598744c485"
+            },
+            "vertices": [
+              {
+                "x": 700,
+                "y": -130
+              }
+            ],
+            "labels": [
+              "Send application id"
+            ]
           },
           {
             "position": {
@@ -869,8 +976,8 @@
           },
           {
             "position": {
-              "x": 432.5,
-              "y": 290
+              "x": 322.5,
+              "y": 305
             },
             "size": {
               "width": 90,
@@ -1072,8 +1179,8 @@
           },
           {
             "position": {
-              "x": 796,
-              "y": 212.66666666666666
+              "x": 816,
+              "y": 310
             },
             "size": {
               "width": 50,
@@ -1181,7 +1288,7 @@
           {
             "position": {
               "x": 1040,
-              "y": -50
+              "y": -90
             },
             "size": {
               "width": 112.5,
@@ -1208,6 +1315,40 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 736,
+              "y": 145
+            },
+            "size": {
+              "width": 80,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Additional document"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "62f60685-0a58-44e4-b573-1e5d2d4c6218",
+            "zIndex": 27,
+            "data": {
+              "type": "tm.Process",
+              "name": "Additional document",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
               "hasOpenThreats": false,
               "threats": []
             }
