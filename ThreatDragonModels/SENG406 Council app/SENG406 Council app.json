@@ -51,8 +51,8 @@
           },
           {
             "position": {
-              "x": 327.3333333333331,
-              "y": 105
+              "x": 300.00000000000006,
+              "y": 115
             },
             "size": {
               "width": 618.6666666666669,
@@ -101,8 +101,8 @@
           },
           {
             "position": {
-              "x": 900,
-              "y": -380
+              "x": 940,
+              "y": -237.6562499999981
             },
             "size": {
               "width": 660,
@@ -582,6 +582,147 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Picked up by a\ncouncil member",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "07ccfe1b-c236-40e8-b385-b61690ea8991",
+            "source": {
+              "x": 600,
+              "y": 0
+            },
+            "target": {
+              "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
+            },
+            "vertices": [
+              {
+                "x": 520,
+                "y": 100
+              }
+            ],
+            "labels": [
+              "Picked up by a\ncouncil member"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Reviews the \nApplication",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "42f2e4b7-2cba-4d6a-aac6-03b49ba3ec22",
+            "source": {
+              "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
+            },
+            "target": {
+              "cell": "b79aa5bf-4764-481c-bc51-a48032442827"
+            },
+            "vertices": [
+              {
+                "x": 540,
+                "y": 191.33
+              },
+              {
+                "x": 490,
+                "y": 220
+              }
+            ],
+            "labels": [
+              "Reviews the \nApplication"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Approves the \napplication",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "7925b609-8a62-4810-a8b1-d6c00fa06c12",
+            "source": {
+              "cell": "b79aa5bf-4764-481c-bc51-a48032442827"
+            },
+            "target": {
+              "x": 1040,
+              "y": -10
+            },
+            "vertices": [
+              {
+                "x": 710,
+                "y": 260
+              }
+            ],
+            "labels": [
+              "Approves the \napplication"
+            ]
+          },
+          {
             "position": {
               "x": 534.9999999999991,
               "y": -60
@@ -696,12 +837,12 @@
           },
           {
             "position": {
-              "x": 544.9999999999991,
-              "y": 271
+              "x": 432.5,
+              "y": 290
             },
             "size": {
-              "width": 70,
-              "height": 70
+              "width": 90,
+              "height": 90
             },
             "attrs": {
               "text": {
@@ -750,67 +891,6 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 18,
-                  "score": ""
-                }
-              ]
-            }
-          },
-          {
-            "position": {
-              "x": 412.5,
-              "y": 193.66666666666677
-            },
-            "size": {
-              "width": 70,
-              "height": 37.33333333333333
-            },
-            "attrs": {
-              "text": {
-                "text": "Reviewers"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "zIndex": 17,
-            "id": "a1b8c9fd-25c6-4bc2-89e6-c1ff04cce790",
-            "data": {
-              "type": "tm.Actor",
-              "name": "Reviewers",
-              "description": "The council members who review the applications",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "providesAuthentication": false,
-              "hasOpenThreats": false,
-              "threats": [
-                {
-                  "id": "1acc1e0f-162d-42ef-8d70-e9b04f8a0903",
-                  "title": "Impersonating",
-                  "status": "Mitigated",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "The threat of unauthorized entites posing as decision reviewers.",
-                  "mitigation": "Implement strong authentication for decision reviewers.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 6,
-                  "score": ""
-                },
-                {
-                  "id": "47d3e108-59cf-44fc-9365-734400a66d57",
-                  "title": "Repudiation of decision",
-                  "status": "Mitigated",
-                  "severity": "Medium",
-                  "type": "Repudiation",
-                  "description": "The threat of the reviewers denying their decisions or their involvement in the decisions",
-                  "mitigation": "Maintain the records of the decision making process and outcomes",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 7,
                   "score": ""
                 }
               ]
