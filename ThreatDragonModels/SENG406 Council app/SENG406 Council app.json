@@ -572,51 +572,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Generate decision\noutcome",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "7925b609-8a62-4810-a8b1-d6c00fa06c12",
-            "source": {
-              "cell": "b79aa5bf-4764-481c-bc51-a48032442827"
-            },
-            "target": {
-              "cell": "6cde62c1-a9bf-4704-9410-78ebea6f79a7"
-            },
-            "vertices": [
-              {
-                "x": 750,
-                "y": 339.5
-              }
-            ],
-            "labels": [
-              "Generate decision\noutcome"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Submits an\n application",
               "description": "",
               "outOfScope": false,
@@ -879,7 +834,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Request Additional\ndocuments",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -895,14 +850,302 @@
               "y": 151
             },
             "target": {
-              "x": 633,
-              "y": 251
-            }
+              "cell": "62f60685-0a58-44e4-b573-1e5d2d4c6218"
+            },
+            "labels": [
+              "Request Additional\ndocuments"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Send support documents",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "74ba34aa-5245-4feb-917b-46e5eb6213ed",
+            "source": {
+              "cell": "00e963fc-4a05-4b60-ae81-3f598744c485"
+            },
+            "target": {
+              "cell": "6cde62c1-a9bf-4704-9410-78ebea6f79a7"
+            },
+            "vertices": [
+              {
+                "x": 680,
+                "y": -160
+              },
+              {
+                "x": 760,
+                "y": -160
+              }
+            ],
+            "labels": [
+              "Send support documents"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Recieve document request",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "bfa9bc2d-5c85-46bf-a0d8-42474d687340",
+            "source": {
+              "cell": "6cde62c1-a9bf-4704-9410-78ebea6f79a7"
+            },
+            "target": {
+              "cell": "00e963fc-4a05-4b60-ae81-3f598744c485"
+            },
+            "vertices": [
+              {
+                "x": 720,
+                "y": -210
+              }
+            ],
+            "labels": [
+              "Recieve document request"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Generate document\nrequest",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "9f32f0b6-7d5b-47a6-a051-6c342342bc28",
+            "source": {
+              "cell": "62f60685-0a58-44e4-b573-1e5d2d4c6218"
+            },
+            "target": {
+              "cell": "6cde62c1-a9bf-4704-9410-78ebea6f79a7"
+            },
+            "vertices": [
+              {
+                "x": 804,
+                "y": 140
+              },
+              {
+                "x": 810,
+                "y": 110
+              },
+              {
+                "x": 850,
+                "y": 70
+              }
+            ],
+            "labels": [
+              "Generate document\nrequest"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Generate decision\noutcome",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "7925b609-8a62-4810-a8b1-d6c00fa06c12",
+            "source": {
+              "cell": "b79aa5bf-4764-481c-bc51-a48032442827"
+            },
+            "target": {
+              "cell": "6cde62c1-a9bf-4704-9410-78ebea6f79a7"
+            },
+            "vertices": [
+              {
+                "x": 550,
+                "y": 270
+              },
+              {
+                "x": 850,
+                "y": 250
+              }
+            ],
+            "labels": [
+              "Generate decision\noutcome"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Recieve documents",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "699c39e0-58f0-4d9d-ac0d-c1a246b9b688",
+            "source": {
+              "cell": "6cde62c1-a9bf-4704-9410-78ebea6f79a7"
+            },
+            "target": {
+              "cell": "62f60685-0a58-44e4-b573-1e5d2d4c6218"
+            },
+            "labels": [
+              "Recieve documents"
+            ],
+            "vertices": [
+              {
+                "x": 950,
+                "y": 70
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Store additional\ndocuments",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "a57a35b4-338c-4ed3-b00f-57e2e8992ea2",
+            "source": {
+              "cell": "62f60685-0a58-44e4-b573-1e5d2d4c6218"
+            },
+            "target": {
+              "cell": "3a262796-b9d9-488a-938d-0ae1de683a4e"
+            },
+            "vertices": [
+              {
+                "x": 650,
+                "y": 80
+              }
+            ],
+            "labels": [
+              "Store additional\ndocuments"
+            ]
           },
           {
             "position": {
-              "x": 382.5,
-              "y": -70
+              "x": 359.9999999999991,
+              "y": -210
             },
             "size": {
               "width": 80,
@@ -1285,8 +1528,8 @@
           },
           {
             "position": {
-              "x": 490,
-              "y": -190
+              "x": 269.9999999999991,
+              "y": -24.66666666666667
             },
             "size": {
               "width": 120,
@@ -1325,12 +1568,12 @@
           },
           {
             "position": {
-              "x": 1040,
-              "y": -90
+              "x": 1030,
+              "y": -115.33333333333333
             },
             "size": {
-              "width": 112.5,
-              "height": 60
+              "width": 170,
+              "height": 90.66666666666666
             },
             "attrs": {
               "text": {
@@ -1359,8 +1602,8 @@
           },
           {
             "position": {
-              "x": 736,
-              "y": 145
+              "x": 760,
+              "y": 160
             },
             "size": {
               "width": 80,
