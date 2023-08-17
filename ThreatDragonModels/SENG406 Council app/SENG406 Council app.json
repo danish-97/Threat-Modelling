@@ -815,7 +815,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Application \ncreation"
+                "text": "Application\n Submission"
               },
               "body": {
                 "stroke": "#333333",
@@ -829,13 +829,92 @@
             "id": "00e963fc-4a05-4b60-ae81-3f598744c485",
             "data": {
               "type": "tm.Process",
-              "name": "Application \ncreation",
-              "description": "Used to create the application",
+              "name": "Application\n Submission",
+              "description": "Used to create the application and submit the application",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "6fbdba9f-a387-40c2-ac9c-6b73f6a9fb68",
+                  "title": "Impersonating",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Malicious actors could impersonate legitimate applicants during the application submission process",
+                  "mitigation": "Implement strong authentication methods such as MFA (multi-factor authentication)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "2471e212-0317-4d9d-9a92-b9528e9cf482",
+                  "title": "Illegal Modifying",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers might modify the application details or supporting documents during the submission.",
+                  "mitigation": "Apply data integrity checks to detect any unauthorized changes in the submitted data by using digital signatures and checksums",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "1aa0d5bc-440a-4316-8ecc-2dbb1309d856",
+                  "title": "Repudiation of application",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Applicant may deny having submitted their application",
+                  "mitigation": "Maintain comprehensive audit logs that capture all actions and interactions during the submission.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                },
+                {
+                  "id": "8fa3177c-3923-4c33-abe7-bbccdd918f7e",
+                  "title": "Data Exposure",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Sensitive applicant information might be exposed to unauthorized parties during submission.",
+                  "mitigation": "* Secure the communication channel using HTTPS to encrypt data in transit.\n* Use access controls to ensure that only authorized personnel can access the submitted data",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                },
+                {
+                  "id": "15ea05d3-01aa-4968-9422-347256341459",
+                  "title": "DDoS Attack",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Attackers could flood the application submission system with requests, causing it to become unavailable",
+                  "mitigation": "Implement rate limiting and CAPTCHA mechanisms to mitigate automated submission attacks.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                },
+                {
+                  "id": "2f6a4cc7-9de3-4967-b9df-bd18d76e9baf",
+                  "title": "Elevated Privilege access",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Malicious actors could attempt to gain unauthorized access to higher privilege levels within the application",
+                  "mitigation": "Implement a least privilege principle where users are only granted the minimal permissions necessary for their tasks.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -864,12 +943,39 @@
             "data": {
               "type": "tm.Process",
               "name": "Application \nreview",
-              "description": "",
+              "description": "The review process of the application",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "66eecd84-6e77-4c24-b489-c4ef30996650",
+                  "title": "Impersonating",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Malicious actors could impersonate legitimate council staff members during the application review process",
+                  "mitigation": "Implement string staff authentication methods such as MFA",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                },
+                {
+                  "id": "f20b5597-9bcf-453c-bedc-c80d13ad32f6",
+                  "title": "Illegal Modifying",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers might modify application details or decisions during the review process.",
+                  "mitigation": "Apply access controls and record digital signatures or timestamps on decisions to ensure their integirty.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1006,40 +1112,6 @@
                 }
               ]
             }
-          },
-          {
-            "position": {
-              "x": 390,
-              "y": 540
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Third "
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "id": "121e3a74-81b4-42c9-a680-8c6301b72acf",
-            "zIndex": 18,
-            "data": {
-              "type": "tm.Actor",
-              "name": "Third ",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "providesAuthentication": false,
-              "hasOpenThreats": false,
-              "threats": []
-            }
           }
         ],
         "description": "A STRIDE diagram showcasing the threat model of the process of applying for a building consent application."
@@ -1047,6 +1119,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 7
+    "threatTop": 18
   }
 }
