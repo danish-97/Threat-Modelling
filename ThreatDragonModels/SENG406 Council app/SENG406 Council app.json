@@ -89,8 +89,8 @@
                 "text": "General Application System"
               }
             },
-            "id": "11f4de20-4ef5-4d5c-af62-c9bbefd8452f",
             "zIndex": -1,
+            "id": "11f4de20-4ef5-4d5c-af62-c9bbefd8452f",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "General Application System",
@@ -114,8 +114,8 @@
                 "text": "Email System"
               }
             },
-            "id": "ec5bcd1c-36e3-4f7f-b5a2-87dd9ad25005",
             "zIndex": -1,
+            "id": "ec5bcd1c-36e3-4f7f-b5a2-87dd9ad25005",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Email System",
@@ -320,15 +320,15 @@
               "threats": []
             },
             "id": "52a22602-918d-4d77-a63e-5a568016a01e",
+            "labels": [
+              "Credentials"
+            ],
             "source": {
               "cell": "7285e0b4-8556-49f1-b968-432177da5988"
             },
             "target": {
               "cell": "6c51a5e7-ef0b-4681-a83e-8418175befe4"
-            },
-            "labels": [
-              "Credentials"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -359,15 +359,15 @@
               "threats": []
             },
             "id": "1f2fdd92-62b4-4436-8fca-7d6fa7b1fd2c",
+            "labels": [
+              "Token"
+            ],
             "source": {
               "cell": "6c51a5e7-ef0b-4681-a83e-8418175befe4"
             },
             "target": {
               "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
-            },
-            "labels": [
-              "Token"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -398,6 +398,9 @@
               "threats": []
             },
             "id": "42f2e4b7-2cba-4d6a-aac6-03b49ba3ec22",
+            "labels": [
+              "Reviews the \nApplication"
+            ],
             "source": {
               "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
             },
@@ -417,9 +420,6 @@
                 "x": 410,
                 "y": 260
               }
-            ],
-            "labels": [
-              "Reviews the \nApplication"
             ]
           },
           {
@@ -451,15 +451,15 @@
               "threats": []
             },
             "id": "b87a5e34-9f66-49dd-9343-13ed1c719557",
+            "labels": [
+              "Submits an\n application"
+            ],
             "source": {
               "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
             },
             "target": {
               "cell": "00e963fc-4a05-4b60-ae81-3f598744c485"
-            },
-            "labels": [
-              "Submits an\n application"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -490,15 +490,15 @@
               "threats": []
             },
             "id": "d685b542-0572-4702-90c2-b46ee779ee3b",
+            "labels": [
+              "Application\ndetails"
+            ],
             "source": {
               "cell": "3a262796-b9d9-488a-938d-0ae1de683a4e"
             },
             "target": {
               "cell": "00e963fc-4a05-4b60-ae81-3f598744c485"
-            },
-            "labels": [
-              "Application\ndetails"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -529,6 +529,9 @@
               "threats": []
             },
             "id": "07ccfe1b-c236-40e8-b385-b61690ea8991",
+            "labels": [
+              "Picked up by a\ncouncil member"
+            ],
             "source": {
               "cell": "00e963fc-4a05-4b60-ae81-3f598744c485"
             },
@@ -540,9 +543,6 @@
                 "x": 520,
                 "y": 100
               }
-            ],
-            "labels": [
-              "Picked up by a\ncouncil member"
             ]
           },
           {
@@ -574,15 +574,15 @@
               "threats": []
             },
             "id": "009b7f12-8041-4dd2-8a87-42f3e8d9aa4b",
+            "labels": [
+              "Decision outcome\nemail"
+            ],
             "source": {
               "cell": "6cde62c1-a9bf-4704-9410-78ebea6f79a7"
             },
             "target": {
               "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
             },
-            "labels": [
-              "Decision outcome\nemail"
-            ],
             "vertices": [
               {
                 "x": 930,
@@ -619,6 +619,9 @@
               "threats": []
             },
             "id": "1478aa17-8499-4710-bc61-631051c3c468",
+            "labels": [
+              "Generate Application id"
+            ],
             "source": {
               "cell": "00e963fc-4a05-4b60-ae81-3f598744c485"
             },
@@ -634,9 +637,6 @@
                 "x": 960,
                 "y": -20
               }
-            ],
-            "labels": [
-              "Generate Application id"
             ]
           },
           {
@@ -668,6 +668,9 @@
               "threats": []
             },
             "id": "57d0cab2-7540-4739-965f-f211b5c7ccdb",
+            "labels": [
+              "Send application id"
+            ],
             "source": {
               "cell": "6cde62c1-a9bf-4704-9410-78ebea6f79a7"
             },
@@ -679,9 +682,6 @@
                 "x": 700,
                 "y": -130
               }
-            ],
-            "labels": [
-              "Send application id"
             ]
           },
           {
@@ -713,16 +713,16 @@
               "threats": []
             },
             "id": "19abfb3d-e2a0-47bf-afe4-a9a0731b87fc",
+            "labels": [
+              "Request Additional\ndocuments"
+            ],
             "source": {
               "x": 533,
               "y": 151
             },
             "target": {
               "cell": "62f60685-0a58-44e4-b573-1e5d2d4c6218"
-            },
-            "labels": [
-              "Request Additional\ndocuments"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -753,6 +753,9 @@
               "threats": []
             },
             "id": "74ba34aa-5245-4feb-917b-46e5eb6213ed",
+            "labels": [
+              "Send support documents"
+            ],
             "source": {
               "cell": "00e963fc-4a05-4b60-ae81-3f598744c485"
             },
@@ -768,9 +771,6 @@
                 "x": 760,
                 "y": -160
               }
-            ],
-            "labels": [
-              "Send support documents"
             ]
           },
           {
@@ -802,6 +802,9 @@
               "threats": []
             },
             "id": "bfa9bc2d-5c85-46bf-a0d8-42474d687340",
+            "labels": [
+              "Recieve document request"
+            ],
             "source": {
               "cell": "6cde62c1-a9bf-4704-9410-78ebea6f79a7"
             },
@@ -813,9 +816,6 @@
                 "x": 720,
                 "y": -210
               }
-            ],
-            "labels": [
-              "Recieve document request"
             ]
           },
           {
@@ -847,6 +847,9 @@
               "threats": []
             },
             "id": "9f32f0b6-7d5b-47a6-a051-6c342342bc28",
+            "labels": [
+              "Generate document\nrequest"
+            ],
             "source": {
               "cell": "62f60685-0a58-44e4-b573-1e5d2d4c6218"
             },
@@ -866,9 +869,6 @@
                 "x": 850,
                 "y": 70
               }
-            ],
-            "labels": [
-              "Generate document\nrequest"
             ]
           },
           {
@@ -900,6 +900,9 @@
               "threats": []
             },
             "id": "7925b609-8a62-4810-a8b1-d6c00fa06c12",
+            "labels": [
+              "Generate decision\noutcome"
+            ],
             "source": {
               "cell": "b79aa5bf-4764-481c-bc51-a48032442827"
             },
@@ -912,12 +915,17 @@
                 "y": 270
               },
               {
+                "x": 780,
+                "y": 250
+              },
+              {
                 "x": 850,
                 "y": 250
+              },
+              {
+                "x": 940,
+                "y": 170
               }
-            ],
-            "labels": [
-              "Generate decision\noutcome"
             ]
           },
           {
@@ -949,15 +957,15 @@
               "threats": []
             },
             "id": "699c39e0-58f0-4d9d-ac0d-c1a246b9b688",
+            "labels": [
+              "Recieve documents"
+            ],
             "source": {
               "cell": "6cde62c1-a9bf-4704-9410-78ebea6f79a7"
             },
             "target": {
               "cell": "62f60685-0a58-44e4-b573-1e5d2d4c6218"
             },
-            "labels": [
-              "Recieve documents"
-            ],
             "vertices": [
               {
                 "x": 950,
@@ -994,6 +1002,9 @@
               "threats": []
             },
             "id": "a57a35b4-338c-4ed3-b00f-57e2e8992ea2",
+            "labels": [
+              "Store additional\ndocuments"
+            ],
             "source": {
               "cell": "62f60685-0a58-44e4-b573-1e5d2d4c6218"
             },
@@ -1005,9 +1016,6 @@
                 "x": 650,
                 "y": 80
               }
-            ],
-            "labels": [
-              "Store additional\ndocuments"
             ]
           },
           {
@@ -1136,6 +1144,10 @@
               {
                 "x": 1170,
                 "y": 226
+              },
+              {
+                "x": 1240,
+                "y": 226
               }
             ]
           },
@@ -1168,6 +1180,9 @@
               "threats": []
             },
             "id": "654a71d5-4807-4b27-9492-bcb5483ea28d",
+            "labels": [
+              "Generate credentials"
+            ],
             "source": {
               "cell": "724c6052-db0f-4d6a-94c2-fa73196f7756"
             },
@@ -1179,9 +1194,6 @@
                 "x": 1000,
                 "y": 320
               }
-            ],
-            "labels": [
-              "Generate credentials"
             ]
           },
           {
@@ -1555,8 +1567,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "7285e0b4-8556-49f1-b968-432177da5988",
             "zIndex": 24,
+            "id": "7285e0b4-8556-49f1-b968-432177da5988",
             "data": {
               "type": "tm.Actor",
               "name": "Unauth Council\nMember",
@@ -1629,8 +1641,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "6cde62c1-a9bf-4704-9410-78ebea6f79a7",
             "zIndex": 26,
+            "id": "6cde62c1-a9bf-4704-9410-78ebea6f79a7",
             "data": {
               "type": "tm.Actor",
               "name": "Email system",
@@ -1663,8 +1675,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "62f60685-0a58-44e4-b573-1e5d2d4c6218",
             "zIndex": 27,
+            "id": "62f60685-0a58-44e4-b573-1e5d2d4c6218",
             "data": {
               "type": "tm.Process",
               "name": "Additional\ndocument\nrequest",
