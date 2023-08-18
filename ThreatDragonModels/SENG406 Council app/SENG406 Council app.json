@@ -1724,7 +1724,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Application details\n datastore"
+                "text": "Application\n datastore"
               },
               "topLine": {
                 "strokeWidth": 1,
@@ -1741,7 +1741,7 @@
             "zIndex": 25,
             "data": {
               "type": "tm.Store",
-              "name": "Application details\n datastore",
+              "name": "Application\n datastore",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1789,8 +1789,8 @@
           },
           {
             "position": {
-              "x": 380.00000000000006,
-              "y": -159.35416666666669
+              "x": 351,
+              "y": -204.51041666666683
             },
             "size": {
               "width": 80,
