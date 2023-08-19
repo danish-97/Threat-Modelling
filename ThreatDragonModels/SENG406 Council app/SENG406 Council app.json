@@ -26,12 +26,12 @@
         "cells": [
           {
             "position": {
-              "x": 1090,
-              "y": 140
+              "x": 1020,
+              "y": 139.99999999999974
             },
             "size": {
-              "width": 480,
-              "height": 225.00000000000003
+              "width": 550,
+              "height": 257.81250000000006
             },
             "shape": "trust-boundary-box",
             "attrs": {
@@ -1151,45 +1151,6 @@
               "hasOpenThreats": false,
               "threats": []
             },
-            "id": "bd015c24-7b94-439c-a042-d0331db3e381",
-            "labels": [
-              "Staff details"
-            ],
-            "source": {
-              "cell": "e00fe644-311e-4790-ac36-c8786545f10b"
-            },
-            "target": {
-              "cell": "1c3ee008-5d88-4cad-9d66-4165dea3e0d8"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Staff details",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
             "id": "04bd7d90-6023-4d56-bb2c-b4f4144a5c4c",
             "labels": [
               "Staff details"
@@ -1515,6 +1476,90 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Staff details",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "bd015c24-7b94-439c-a042-d0331db3e381",
+            "labels": [
+              "Staff details"
+            ],
+            "source": {
+              "cell": "1c3ee008-5d88-4cad-9d66-4165dea3e0d8"
+            },
+            "target": {
+              "cell": "e00fe644-311e-4790-ac36-c8786545f10b"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Staff details",
+              "description": "New details of the staff member. Requires the user's token.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "23427cd2-f2b6-445b-869e-6f958256de43",
+            "source": {
+              "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
+            },
+            "target": {
+              "cell": "e00fe644-311e-4790-ac36-c8786545f10b"
+            },
+            "vertices": [
+              {
+                "x": 850,
+                "y": 490
+              }
+            ],
+            "labels": [
+              "Staff details"
+            ]
+          },
+          {
             "position": {
               "x": 753.5,
               "y": -124.51041666666683
@@ -1758,8 +1803,8 @@
           },
           {
             "position": {
-              "x": 1140,
-              "y": 298.0000000000007
+              "x": 1065,
+              "y": 328.0000000000007
             },
             "size": {
               "width": 50,
@@ -2070,16 +2115,19 @@
           {
             "position": {
               "x": 1265,
-              "y": 231
+              "y": 238.90624999999977
             },
             "size": {
               "width": 60,
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Edit\nStaff"
+              },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
+                "stroke": "red",
+                "strokeWidth": 3,
                 "strokeDasharray": null
               }
             },
@@ -2089,13 +2137,27 @@
             "id": "e00fe644-311e-4790-ac36-c8786545f10b",
             "data": {
               "type": "tm.Process",
-              "name": "Process",
+              "name": "Edit\nStaff",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "ecc9ab75-4208-4c05-9994-f143bd1fbb32",
+                  "title": "Account alterations",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "A members account could be altered without their knowing about it.",
+                  "mitigation": "Logs are recorded whenever a modification is made with the ID of the user making the changes.\nNotification is sent to the user when a change is made to their account.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 30,
+                  "score": ""
+                }
+              ]
             }
           }
         ],
@@ -2104,6 +2166,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 29
+    "threatTop": 30
   }
 }
