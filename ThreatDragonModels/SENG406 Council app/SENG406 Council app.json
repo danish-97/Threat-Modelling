@@ -231,16 +231,16 @@
                   "score": ""
                 },
                 {
-                  "id": "814fae20-e88d-414b-bd9e-6877d9d8fa0c",
-                  "title": "Impersonating",
+                  "id": "375c19ea-c57e-4e66-85da-fd223313aa85",
+                  "title": "Repudiation of additional information",
                   "status": "Mitigated",
                   "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "The threat of malicious actors impersonating legitimate applicants.",
-                  "mitigation": "Implement strong multi-factor authentication methods, such as MFA, to verify the identity of the applicants.",
+                  "type": "Repudiation",
+                  "description": "Applicant can deny having received an email requesting additional information",
+                  "mitigation": "Sent emails are recorded in email client",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 3,
+                  "number": 29,
                   "score": ""
                 }
               ]
@@ -1330,64 +1330,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Document request",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "8c47fd60-c71b-4567-ba4b-d2cf060c70fd",
-                  "title": "Poofed document request",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "An adversary can pretend to be from the council and request documents from the applicant",
-                  "mitigation": "Using email system with common domain (such as @canterbury.ac.nz but for the council) ",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 21,
-                  "score": ""
-                }
-              ]
-            },
-            "id": "37eb868b-1e3a-43c4-b18a-14874a339fc8",
-            "labels": [
-              "Document request"
-            ],
-            "source": {
-              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
-            },
-            "target": {
-              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
-            },
-            "vertices": [
-              {
-                "x": 1060,
-                "y": -330
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Application summary",
               "description": "",
               "outOfScope": false,
@@ -1511,6 +1453,64 @@
               {
                 "x": 680,
                 "y": -200
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Document request",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "8c47fd60-c71b-4567-ba4b-d2cf060c70fd",
+                  "title": "Poofed document request",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An adversary can pretend to be from the council and request documents from the applicant",
+                  "mitigation": "Using email system with common domain (such as @canterbury.ac.nz but for the council) ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "37eb868b-1e3a-43c4-b18a-14874a339fc8",
+            "labels": [
+              "Document request"
+            ],
+            "source": {
+              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
+            },
+            "target": {
+              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+            },
+            "vertices": [
+              {
+                "x": 1060,
+                "y": -330
               }
             ]
           },
@@ -2104,6 +2104,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 26
+    "threatTop": 29
   }
 }
