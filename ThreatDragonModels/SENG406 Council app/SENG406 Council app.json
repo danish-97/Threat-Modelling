@@ -2126,8 +2126,8 @@
                 "text": "Edit\nStaff"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 3,
+                "stroke": "#333333",
+                "strokeWidth": 1,
                 "strokeDasharray": null
               }
             },
@@ -2142,12 +2142,12 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "ecc9ab75-4208-4c05-9994-f143bd1fbb32",
                   "title": "Account alterations",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Repudiation",
                   "description": "A members account could be altered without their knowing about it.",
@@ -2166,6 +2166,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 30
+    "threatTop": 31
   }
 }
