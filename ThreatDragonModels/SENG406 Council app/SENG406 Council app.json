@@ -1306,51 +1306,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Document\nrequest",
-              "description": "Request for additional document for the applicant",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "9f32f0b6-7d5b-47a6-a051-6c342342bc28",
-            "labels": [
-              "Document\nrequest"
-            ],
-            "source": {
-              "cell": "62f60685-0a58-44e4-b573-1e5d2d4c6218"
-            },
-            "target": {
-              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
-            },
-            "vertices": [
-              {
-                "x": 960,
-                "y": 40
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "red",
                 "targetMarker": {
                   "name": "classic"
@@ -1726,6 +1681,64 @@
               "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Document\nrequest",
+              "description": "Request for additional document for the applicant",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "b3429253-48d3-4b89-976d-345f17b1840c",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers can tamper with the content of the email and request for different documents than the one the council member asked.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 47,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "9f32f0b6-7d5b-47a6-a051-6c342342bc28",
+            "labels": [
+              "Document\nrequest"
+            ],
+            "source": {
+              "cell": "62f60685-0a58-44e4-b573-1e5d2d4c6218"
+            },
+            "target": {
+              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
+            },
+            "vertices": [
+              {
+                "x": 960,
+                "y": 40
+              }
+            ]
           },
           {
             "position": {
@@ -2368,6 +2381,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 46
+    "threatTop": 47
   }
 }
