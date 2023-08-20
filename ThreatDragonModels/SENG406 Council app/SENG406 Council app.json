@@ -2286,8 +2286,8 @@
                 "text": "Email\nService"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
+                "stroke": "red",
+                "strokeWidth": 3,
                 "strokeDasharray": null
               }
             },
@@ -2302,8 +2302,61 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "d053bc72-23c6-44b8-9178-d23b2650f6f4",
+                  "title": "Spoofing of email content",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Attackers can falsify the sender's email address or manipulate email headers to make it appear as if an email is coming from a legitimate source.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 49,
+                  "score": ""
+                },
+                {
+                  "id": "9a3dccff-bbb8-4080-9066-0809628533fb",
+                  "title": "Repudiation of sending emails",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Users might deny sending or receiving certain emails.",
+                  "mitigation": "Maintain detailed email logs that include sender, recipient, timestamp, and content. ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 50,
+                  "score": ""
+                },
+                {
+                  "id": "66b480aa-7e24-4a1b-a9a1-d78cf14d9b9f",
+                  "title": "Sensitive content exposure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Sensitive information contained in emails could be exposed to unauthorized parties if intercepted or sent to unintended recipients.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 51,
+                  "score": ""
+                },
+                {
+                  "id": "c73e31e0-7493-4a3a-b832-6dccdbe41abb",
+                  "title": "Email service disruption",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "A successful attack could overwhelm the email service with spam, resulting in delays or disruptions in email delivery",
+                  "mitigation": "Implement email filtering and rate limiting to mitigate the impact of email spam attacks",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 52,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -2394,6 +2447,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 48
+    "threatTop": 52
   }
 }
