@@ -1455,45 +1455,6 @@
             "data": {
               "type": "tm.Flow",
               "name": "Staff details",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "bd015c24-7b94-439c-a042-d0331db3e381",
-            "labels": [
-              "Staff details"
-            ],
-            "source": {
-              "cell": "1c3ee008-5d88-4cad-9d66-4165dea3e0d8"
-            },
-            "target": {
-              "cell": "e00fe644-311e-4790-ac36-c8786545f10b"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Staff details",
               "description": "New details of the staff member. Requires the user's token.",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1572,6 +1533,91 @@
             "target": {
               "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Staff \ndetails",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "bd015c24-7b94-439c-a042-d0331db3e381",
+            "labels": [
+              "Staff \ndetails"
+            ],
+            "source": {
+              "cell": "1c3ee008-5d88-4cad-9d66-4165dea3e0d8"
+            },
+            "target": {
+              "cell": "e00fe644-311e-4790-ac36-c8786545f10b"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Updated\nstaff\ndetails",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "a94e11ef-1031-4d77-8fe3-b92988769c73",
+            "source": {
+              "cell": "e00fe644-311e-4790-ac36-c8786545f10b"
+            },
+            "target": {
+              "cell": "1c3ee008-5d88-4cad-9d66-4165dea3e0d8"
+            },
+            "vertices": [
+              {
+                "x": 1180,
+                "y": 271.91
+              }
+            ],
+            "labels": [
+              "Updated\nstaff\ndetails"
+            ]
           },
           {
             "position": {
@@ -1749,8 +1795,8 @@
           },
           {
             "position": {
-              "x": 1440,
-              "y": 301.66666666666737
+              "x": 1481,
+              "y": 331.66666666666737
             },
             "size": {
               "width": 80,
@@ -1784,7 +1830,7 @@
           {
             "position": {
               "x": 1491,
-              "y": 140
+              "y": 156.16666666666694
             },
             "size": {
               "width": 60,
@@ -1851,8 +1897,8 @@
           },
           {
             "position": {
-              "x": 1115,
-              "y": 145
+              "x": 1040,
+              "y": 161.16666666666694
             },
             "size": {
               "width": 100,
@@ -1925,8 +1971,8 @@
           },
           {
             "position": {
-              "x": 890,
-              "y": 301.66666666666737
+              "x": 850,
+              "y": 321.00000000000074
             },
             "size": {
               "width": 100,
@@ -2128,7 +2174,7 @@
           },
           {
             "position": {
-              "x": 1265,
+              "x": 1295,
               "y": 238.90624999999977
             },
             "size": {
@@ -2180,6 +2226,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 33
+    "threatTop": 34
   }
 }
