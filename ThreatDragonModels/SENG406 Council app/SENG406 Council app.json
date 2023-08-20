@@ -1,5 +1,5 @@
 {
-  "version": "2.0.5",
+  "version": "2.0.4-RC2",
   "summary": {
     "title": "SENG406 Council app",
     "owner": "Jack",
@@ -126,8 +126,8 @@
           },
           {
             "position": {
-              "x": 122.5,
-              "y": 291.0000000000007
+              "x": 52.5,
+              "y": 298.0000000000007
             },
             "size": {
               "width": 120,
@@ -1771,12 +1771,70 @@
             },
             "vertices": [
               {
-                "x": 510,
-                "y": 420
+                "x": 490,
+                "y": 540
               },
               {
-                "x": 1010,
-                "y": 420
+                "x": 1160,
+                "y": 570
+              }
+            ]
+          },
+          {
+            "shape": "trust-broundary-curve",
+            "attrs": {
+              "line": {
+                "targetMarker": "",
+                "sourceMarker": ""
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "labels": [
+              "AWS hosting service"
+            ],
+            "data": {
+              "type": "tm.Boundary",
+              "name": "AWS hosting service",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "8ab2e83e-fed5-4b5d-9d52-d48ceec2d30c",
+            "source": {
+              "x": 1450,
+              "y": 570
+            },
+            "target": {
+              "x": 1450,
+              "y": 570
+            },
+            "vertices": [
+              {
+                "x": 300,
+                "y": 390
+              },
+              {
+                "x": 110,
+                "y": -230
+              },
+              {
+                "x": 550,
+                "y": -320
+              },
+              {
+                "x": 880,
+                "y": -290
+              },
+              {
+                "x": 990,
+                "y": -60
+              },
+              {
+                "x": 1650,
+                "y": 150
               }
             ]
           },
@@ -1969,8 +2027,8 @@
           },
           {
             "position": {
-              "x": 1481,
-              "y": 331.66666666666737
+              "x": 1660,
+              "y": 470
             },
             "size": {
               "width": 80,
@@ -2357,8 +2415,8 @@
           },
           {
             "position": {
-              "x": 833.5,
-              "y": 301.66666666666737
+              "x": 811.9999999999998,
+              "y": 444.47916666666646
             },
             "size": {
               "width": 100,
