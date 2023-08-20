@@ -642,46 +642,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Credentials",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "654a71d5-4807-4b27-9492-bcb5483ea28d",
-            "labels": [
-              "Credentials"
-            ],
-            "source": {
-              "cell": "724c6052-db0f-4d6a-94c2-fa73196f7756"
-            },
-            "target": {
-              "cell": "7285e0b4-8556-49f1-b968-432177da5988"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Consent \ndecision",
               "description": "",
               "outOfScope": false,
@@ -1125,55 +1085,6 @@
               {
                 "x": 1060,
                 "y": -330
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Staff details",
-              "description": "New details of the staff member. Requires the user's token.",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "23427cd2-f2b6-445b-869e-6f958256de43",
-            "labels": [
-              "Staff details"
-            ],
-            "source": {
-              "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
-            },
-            "target": {
-              "cell": "e00fe644-311e-4790-ac36-c8786545f10b"
-            },
-            "vertices": [
-              {
-                "x": 510,
-                "y": 420
-              },
-              {
-                "x": 1010,
-                "y": 420
               }
             ]
           },
@@ -1750,6 +1661,122 @@
               {
                 "x": 960,
                 "y": 40
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Credentials",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "654a71d5-4807-4b27-9492-bcb5483ea28d",
+            "labels": [
+              "Credentials"
+            ],
+            "source": {
+              "cell": "724c6052-db0f-4d6a-94c2-fa73196f7756"
+            },
+            "target": {
+              "cell": "7285e0b4-8556-49f1-b968-432177da5988"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Staff details",
+              "description": "New details of the staff member. Requires the user's token.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "id": "a069b616-98d0-4904-9c0e-d6150e7b940b",
+                  "title": "Tampering with staff details",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers might modify staff details during transmission, altering information being sent to the process.",
+                  "mitigation": "Apply data integrity checks to detect tampering during transit",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 66,
+                  "score": ""
+                },
+                {
+                  "id": "5f9b55a5-496c-45c6-9913-d93867fa0004",
+                  "title": "Staff details exposure",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Sensitive staff details could be exposed during transit, leading to leakage of private information",
+                  "mitigation": "Apply HTTPS protocols ensuring that the data is protected during transit",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 67,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "23427cd2-f2b6-445b-869e-6f958256de43",
+            "labels": [
+              "Staff details"
+            ],
+            "source": {
+              "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
+            },
+            "target": {
+              "cell": "e00fe644-311e-4790-ac36-c8786545f10b"
+            },
+            "vertices": [
+              {
+                "x": 510,
+                "y": 420
+              },
+              {
+                "x": 1010,
+                "y": 420
               }
             ]
           },
@@ -2385,7 +2412,7 @@
           },
           {
             "position": {
-              "x": 346,
+              "x": 351,
               "y": -204.5104166666668
             },
             "size": {
@@ -2585,6 +2612,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 65
+    "threatTop": 68
   }
 }
