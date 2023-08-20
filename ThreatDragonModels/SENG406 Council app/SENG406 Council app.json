@@ -2310,8 +2310,8 @@
                 "text": "Additional\ndocument\nrequest"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
+                "stroke": "red",
+                "strokeWidth": 3,
                 "strokeDasharray": null
               }
             },
@@ -2326,8 +2326,61 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
-              "threats": []
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "aa8714ed-5259-4fb4-84f3-65ddf364102f",
+                  "title": "Spoofing of request",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Attackers can impersonate council members to send fraudulent document requests",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 62,
+                  "score": ""
+                },
+                {
+                  "id": "37a6191b-715b-44e5-9440-49cd39664825",
+                  "title": "Repudiation of request",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Council members might deny sending document requests, making it difficult to confirm the authenticity of requests",
+                  "mitigation": "Maintain detailed requests of document requests, including timestamps and staff identities, to establish a reliable audit trail",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 63,
+                  "score": ""
+                },
+                {
+                  "id": "66bed33f-d7db-4553-85c7-4194e9a5c7a9",
+                  "title": "Sensitive content exposure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Document requests might contain sensitive information that could be exposed to unauthorized parties",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 64,
+                  "score": ""
+                },
+                {
+                  "id": "00339c98-8340-4974-ba6c-9dee95ef2a61",
+                  "title": "False requests",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Attackers might submit false document requests to gain unauthorized access or disrupt the application process.",
+                  "mitigation": "Apply the least privilege principle by granting council members only the minimum permissions required for their specific roles within the process, thereby limiting their access to sensitive functions and data.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 65,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -2532,6 +2585,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 61
+    "threatTop": 65
   }
 }
