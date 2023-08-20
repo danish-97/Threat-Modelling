@@ -1306,64 +1306,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Application summary",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "a9566798-4c63-4cfb-8c62-36f150c0d77d",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "An adversary could intercept this and gain access to the application details",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 22,
-                  "score": ""
-                }
-              ]
-            },
-            "id": "4f26ee66-158a-4257-a26d-80b23c5c093d",
-            "labels": [
-              "Application summary"
-            ],
-            "source": {
-              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
-            },
-            "target": {
-              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
-            },
-            "vertices": [
-              {
-                "x": 1090,
-                "y": -380
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "#333333",
                 "strokeWidth": 1,
                 "targetMarker": {
@@ -1404,60 +1346,6 @@
                 "y": 40
               }
             ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Application summary",
-              "description": "Summary of the application and unique ID",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": [
-                {
-                  "id": "3c296d42-2d3d-4c3d-9d6a-6c793ca40b68",
-                  "title": "Data Exposure",
-                  "status": "Mitigated",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "Sensitive applicant information might be exposed to unauthorized parties during submission.",
-                  "mitigation": "* Secure the communication channel using HTTPS to encrypt data in transit.\n* Use access controls to ensure that only authorized personnel can access the submitted data",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 36,
-                  "score": ""
-                }
-              ]
-            },
-            "id": "57d0cab2-7540-4739-965f-f211b5c7ccdb",
-            "labels": [
-              "Application summary"
-            ],
-            "source": {
-              "cell": "00e963fc-4a05-4b60-ae81-3f598744c485"
-            },
-            "target": {
-              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
-            },
-            "vertices": []
           },
           {
             "shape": "flow",
@@ -1714,6 +1602,130 @@
                 "y": -220
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Application summary",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "a9566798-4c63-4cfb-8c62-36f150c0d77d",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An adversary could intercept this and gain access to the application details",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "4f26ee66-158a-4257-a26d-80b23c5c093d",
+            "labels": [
+              "Application summary"
+            ],
+            "source": {
+              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
+            },
+            "target": {
+              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+            },
+            "vertices": [
+              {
+                "x": 1090,
+                "y": -380
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Application summary",
+              "description": "Summary of the application and unique ID",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "3c296d42-2d3d-4c3d-9d6a-6c793ca40b68",
+                  "title": "Data Exposure",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Sensitive applicant information might be exposed to unauthorized parties during submission.",
+                  "mitigation": "* Secure the communication channel using HTTPS to encrypt data in transit.\n* Use access controls to ensure that only authorized personnel can access the submitted data",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 36,
+                  "score": ""
+                },
+                {
+                  "id": "36529437-cb8b-4d4c-bba0-c54effb0992a",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An adversary could gain access to this and change the application details",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 46,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "57d0cab2-7540-4739-965f-f211b5c7ccdb",
+            "labels": [
+              "Application summary"
+            ],
+            "source": {
+              "cell": "00e963fc-4a05-4b60-ae81-3f598744c485"
+            },
+            "target": {
+              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
+            },
+            "vertices": []
           },
           {
             "position": {
@@ -2356,6 +2368,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 45
+    "threatTop": 46
   }
 }
