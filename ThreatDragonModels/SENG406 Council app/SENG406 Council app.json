@@ -1923,6 +1923,19 @@
                   "new": false,
                   "number": 18,
                   "score": ""
+                },
+                {
+                  "id": "f0a64f20-11f4-4bca-9a82-79ef319c438c",
+                  "title": "Data exposure",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Sensitive information regarding the application and the review status can be leaked to adversaries",
+                  "mitigation": "* Secure the communication channel using HTTPS to encrypt data in transit.\n* Use access controls to ensure that only authorized personnel can access the submitted data",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 53,
+                  "score": ""
                 }
               ]
             }
@@ -2213,8 +2226,8 @@
           },
           {
             "position": {
-              "x": 351,
-              "y": -204.51041666666683
+              "x": 346,
+              "y": -204.5104166666668
             },
             "size": {
               "width": 80,
@@ -2447,6 +2460,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 52
+    "threatTop": 53
   }
 }
