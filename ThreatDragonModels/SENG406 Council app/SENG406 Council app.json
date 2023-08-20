@@ -187,7 +187,7 @@
           },
           {
             "position": {
-              "x": 753.5,
+              "x": 753.4999999999999,
               "y": -430
             },
             "size": {
@@ -778,224 +778,6 @@
               {
                 "x": 220,
                 "y": 240
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Additional documents",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "2d6ebb31-7e76-48f1-a69b-1b4b1feffa44",
-            "labels": [
-              "Additional documents"
-            ],
-            "source": {
-              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
-            },
-            "target": {
-              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Additional documents",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "699c39e0-58f0-4d9d-ac0d-c1a246b9b688",
-            "labels": [
-              "Additional documents"
-            ],
-            "source": {
-              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
-            },
-            "target": {
-              "cell": "62f60685-0a58-44e4-b573-1e5d2d4c6218"
-            },
-            "vertices": [
-              {
-                "x": 950,
-                "y": -20
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Generate decision\noutcome",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "7925b609-8a62-4810-a8b1-d6c00fa06c12",
-            "labels": [
-              "Generate decision\noutcome"
-            ],
-            "source": {
-              "cell": "b79aa5bf-4764-481c-bc51-a48032442827"
-            },
-            "target": {
-              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
-            },
-            "vertices": [
-              {
-                "x": 680,
-                "y": 250
-              },
-              {
-                "x": 980,
-                "y": 110
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Application summary",
-              "description": "Summary of the application and unique ID",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "57d0cab2-7540-4739-965f-f211b5c7ccdb",
-            "labels": [
-              "Application summary"
-            ],
-            "source": {
-              "cell": "00e963fc-4a05-4b60-ae81-3f598744c485"
-            },
-            "target": {
-              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Decision outcome",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "009b7f12-8041-4dd2-8a87-42f3e8d9aa4b",
-            "labels": [
-              "Decision outcome"
-            ],
-            "source": {
-              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
-            },
-            "target": {
-              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
-            },
-            "vertices": [
-              {
-                "x": 1000,
-                "y": -220
               }
             ]
           },
@@ -1624,6 +1406,316 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Application summary",
+              "description": "Summary of the application and unique ID",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "id": "3c296d42-2d3d-4c3d-9d6a-6c793ca40b68",
+                  "title": "Data Exposure",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Sensitive applicant information might be exposed to unauthorized parties during submission.",
+                  "mitigation": "* Secure the communication channel using HTTPS to encrypt data in transit.\n* Use access controls to ensure that only authorized personnel can access the submitted data",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 36,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "57d0cab2-7540-4739-965f-f211b5c7ccdb",
+            "labels": [
+              "Application summary"
+            ],
+            "source": {
+              "cell": "00e963fc-4a05-4b60-ae81-3f598744c485"
+            },
+            "target": {
+              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Additional documents",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "2c7c7561-16f3-4685-854b-6ee370b751d5",
+                  "title": "Tampering documents",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers might modify the application details or supporting documents during the submission.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 41,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "2d6ebb31-7e76-48f1-a69b-1b4b1feffa44",
+            "labels": [
+              "Additional documents"
+            ],
+            "source": {
+              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+            },
+            "target": {
+              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Generate decision\noutcome",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "58b1340f-3bcb-47af-a5ed-f54721fb6968",
+                  "title": "Tampering of Outcome",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers can access the data during transit and change the outcome than what it was",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 42,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "7925b609-8a62-4810-a8b1-d6c00fa06c12",
+            "labels": [
+              "Generate decision\noutcome"
+            ],
+            "source": {
+              "cell": "b79aa5bf-4764-481c-bc51-a48032442827"
+            },
+            "target": {
+              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
+            },
+            "vertices": [
+              {
+                "x": 680,
+                "y": 250
+              },
+              {
+                "x": 980,
+                "y": 110
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Additional documents",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "7085539c-6db2-47f6-b553-ce42f93c568d",
+                  "title": "Data Exposure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Attackers could access sensitive documents during the transit",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 39,
+                  "score": ""
+                },
+                {
+                  "id": "35d497a9-660d-4fc8-ba08-5064bbb74d4b",
+                  "title": "Denial of Service",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Attackers could flood the staff member's emails with tons of useless emails making it impossible to find the actual correspondence",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 40,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "699c39e0-58f0-4d9d-ac0d-c1a246b9b688",
+            "labels": [
+              "Additional documents"
+            ],
+            "source": {
+              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
+            },
+            "target": {
+              "cell": "62f60685-0a58-44e4-b573-1e5d2d4c6218"
+            },
+            "vertices": [
+              {
+                "x": 950,
+                "y": -20
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Decision outcome",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "8c4a58c4-5de9-409c-bdd9-064331b0bfb4",
+                  "title": "Data Exposure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Attackers could gain access to the decision outcome while it is in transit",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 44,
+                  "score": ""
+                },
+                {
+                  "id": "dc231919-4436-4a63-b8af-4deb1d855879",
+                  "title": "Denial of Service",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Attackers could flood the applicant's email with spam so that it becomes harder to find the real coorespondence",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 45,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "009b7f12-8041-4dd2-8a87-42f3e8d9aa4b",
+            "labels": [
+              "Decision outcome"
+            ],
+            "source": {
+              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
+            },
+            "target": {
+              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+            },
+            "vertices": [
+              {
+                "x": 1000,
+                "y": -220
+              }
+            ]
+          },
+          {
             "position": {
               "x": 753.5,
               "y": -124.51041666666683
@@ -1634,7 +1726,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Application\n Submission"
+                "text": "Application\nSubmission"
               },
               "body": {
                 "stroke": "red",
@@ -1648,7 +1740,7 @@
             "id": "00e963fc-4a05-4b60-ae81-3f598744c485",
             "data": {
               "type": "tm.Process",
-              "name": "Application\n Submission",
+              "name": "Application\nSubmission",
               "description": "Used to create the application and submit the application",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1675,7 +1767,7 @@
                   "severity": "Medium",
                   "type": "Tampering",
                   "description": "Attackers might modify the application details or supporting documents during the submission.",
-                  "mitigation": "Apply data integrity checks to detect any unauthorized changes in the submitted data by using digital signatures and checksums",
+                  "mitigation": "Apply data integrity checks to detect any unauthorized changes in the submitted data by using digital signatures and checksums.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 9,
@@ -1727,7 +1819,7 @@
                   "severity": "Medium",
                   "type": "Elevation of privilege",
                   "description": "Malicious actors could attempt to gain unauthorized access to higher privilege levels within the application",
-                  "mitigation": "Implement a least privilege principle where users are only granted the minimal permissions necessary for their tasks.",
+                  "mitigation": "* Implement a least privilege principle where users are only granted the minimal permissions necessary for their tasks.\n* Ensure that all the documents being submitted are in PDF format",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 14,
@@ -1975,8 +2067,8 @@
           },
           {
             "position": {
-              "x": 850,
-              "y": 321.00000000000074
+              "x": 833.5,
+              "y": 301.66666666666737
             },
             "size": {
               "width": 100,
@@ -2223,6 +2315,40 @@
                 }
               ]
             }
+          },
+          {
+            "position": {
+              "x": 1401,
+              "y": -45
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Third-party\nProviders"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "ab7bfa78-d355-4094-be4f-d2f01a11bc7b",
+            "zIndex": 31,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Third-party\nProviders",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "providesAuthentication": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
           }
         ],
         "description": "A STRIDE diagram showcasing the threat model of the process of applying for a building consent application."
@@ -2230,6 +2356,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 34
+    "threatTop": 45
   }
 }
