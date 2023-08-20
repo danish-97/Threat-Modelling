@@ -2085,6 +2085,32 @@
                   "new": false,
                   "number": 80,
                   "score": ""
+                },
+                {
+                  "id": "92363d7c-a091-4e28-bcf6-599ca250071f",
+                  "title": "Impersonating",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Attackers could impersonate an admin and falsely remove staff members",
+                  "mitigation": "* Implement strong authentication for admins, using methods such as MFA.\n* Validate sender identity before removing users\n* Validate incoming removal requests",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 83,
+                  "score": ""
+                },
+                {
+                  "id": "cab633d8-e4c0-46b1-a91c-b2d0f86656bb",
+                  "title": "Staff details exposure",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Sensitives staff details could be exposed during transmission, leading to unauthorized access or leaking of personal information",
+                  "mitigation": "Apply HTTPS protocols ensuring that the sensitive data is protected while in transit",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 84,
+                  "score": ""
                 }
               ]
             }
@@ -2735,6 +2761,19 @@
                   "new": false,
                   "number": 81,
                   "score": ""
+                },
+                {
+                  "id": "f3b12576-dad8-4bc5-85b3-d3844bfecfb9",
+                  "title": "Staff details exposure",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Sensitives staff details could be exposed during transmission, leading to unauthorized access or leaking of personal information",
+                  "mitigation": "Apply HTTPS protocols, ensuring that the staff details are protected while in transit",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 86,
+                  "score": ""
                 }
               ]
             }
@@ -2745,6 +2784,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 81
+    "threatTop": 86
   }
 }
