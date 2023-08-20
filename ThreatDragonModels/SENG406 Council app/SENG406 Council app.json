@@ -2419,40 +2419,6 @@
                 }
               ]
             }
-          },
-          {
-            "position": {
-              "x": 1401,
-              "y": -45
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Third-party\nProviders"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "zIndex": 31,
-            "id": "ab7bfa78-d355-4094-be4f-d2f01a11bc7b",
-            "data": {
-              "type": "tm.Actor",
-              "name": "Third-party\nProviders",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "providesAuthentication": false,
-              "hasOpenThreats": false,
-              "threats": []
-            }
           }
         ],
         "description": "A STRIDE diagram showcasing the threat model of the process of applying for a building consent application."
