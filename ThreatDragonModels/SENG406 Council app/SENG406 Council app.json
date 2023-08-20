@@ -1998,7 +1998,34 @@
               "reasonOutOfScope": "",
               "providesAuthentication": false,
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "a5eac27e-858d-47c3-91d1-64fcc39214c8",
+                  "title": "Impersonating",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "The threat of malicious actors impersonating legitimate admins",
+                  "mitigation": "Implement strong authentication methods such as MFA",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 70,
+                  "score": ""
+                },
+                {
+                  "id": "b14f07bd-1149-4fb6-b184-a0ed7c1668e1",
+                  "title": "Repudiation of actions",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Users can deny having performed an action, even if they have done so",
+                  "mitigation": "Implement a comprehensive logging system that details the actions taken, along with the timestamps and admin name",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 71,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -2612,6 +2639,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 68
+    "threatTop": 71
   }
 }
