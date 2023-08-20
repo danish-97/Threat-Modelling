@@ -2059,7 +2059,21 @@
               "reasonOutOfScope": "",
               "privilegeLevel": "",
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "860050be-ac10-4cbf-a164-83657c12ccf4",
+                  "title": "Repudiation of removing staff",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Admin may deny removing a staff member",
+                  "mitigation": "Maintain comprehensive logging of actions taken by admin, along with a timestamp and admin identity as evidence.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 76,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -2118,6 +2132,32 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 73,
+                  "score": ""
+                },
+                {
+                  "id": "23a66682-d29c-4035-ac08-3be12794faf7",
+                  "title": "Staff details exposure",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Sensitive staff details can be exposed during transmission, leading to insecure access or leakage of private information",
+                  "mitigation": "Apply HTTPS protocols to ensure that the data is protected during transit",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 74,
+                  "score": ""
+                },
+                {
+                  "id": "9e35f346-0fa3-4515-b40a-9df8a0ab9457",
+                  "title": "Repudiation of adding staff",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Admin may deny having added a new staff member",
+                  "mitigation": "Maintain comprehensive logging of actions taken by admin, along with a timestamp and admin identity as evidence.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 75,
                   "score": ""
                 }
               ]
@@ -2666,6 +2706,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 73
+    "threatTop": 76
   }
 }
