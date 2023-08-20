@@ -2113,7 +2113,86 @@
               "reasonOutOfScope": "",
               "privilegeLevel": "",
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "97417e91-4587-4150-8d52-be6663336096",
+                  "title": "User identity spoofing",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Attackers could impersonate legitimate users by using stolen credentials or manipulating authentication mechanisms",
+                  "mitigation": "Implement stong authentication methods like password complexity requriements and MFA to verify user identity",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 56,
+                  "score": ""
+                },
+                {
+                  "id": "08894e0e-49b1-42b9-ac9e-2c93307d3e53",
+                  "title": "Credentials tampering",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers might modify or manipulate credentials during login attempts, bypassing authentication methods",
+                  "mitigation": "* Implement secure data transmission like HTTPS to prevent credential tampering during transit\n* Validate and sanitize user input to prevent cross scripting",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 57,
+                  "score": ""
+                },
+                {
+                  "id": "687862dc-c1fd-47a6-b22c-7a206466fdd4",
+                  "title": "Login attempt denial",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Users might deny attempting to log in, thereby making it difficult to prove to disprove unauthorized access attempts",
+                  "mitigation": "Implement comprehensive logging of login attempts, including IP addresses and timestamps, to provide evidence of access",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 58,
+                  "score": ""
+                },
+                {
+                  "id": "b21ef0d3-1d1a-4364-b39c-d284e852ce5c",
+                  "title": "Credential exposure",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "User credentials might be exposed due to insecure storage or transmission practices",
+                  "mitigation": "Encrypt stored credentials, use secure hashing algorithms for password storage, and ensure secure transmission of credentials",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 59,
+                  "score": ""
+                },
+                {
+                  "id": "c71a9ffb-1e32-4e1f-a378-c50c204c4e88",
+                  "title": "DDos login discruption",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Attackers could launch brute force or DoS attacks against the login process, disrupting user access",
+                  "mitigation": "Implement account lockout mechanisms, rate limiting, and CAPTCHA challenges to prevent automated attacks",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 60,
+                  "score": ""
+                },
+                {
+                  "id": "d4faa271-1104-45ad-a767-a1abd236b507",
+                  "title": "Credential esclation",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Attackers might exploit vulnerabilities in the login process to gain unauthorized access to higher privilege levels",
+                  "mitigation": "Implement the least privilege principal to ensure that users only have access to the resources and functionalities that they are entitled to",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 61,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -2147,7 +2226,34 @@
               "reasonOutOfScope": "",
               "providesAuthentication": false,
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "98fdca37-289a-47c3-9019-18545b5506f4",
+                  "title": "Impersonating",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An unauthorized council member could impersonate an authorized council member to access application documents and details",
+                  "mitigation": "Provide login tokens to every authorized council member and ensure that only a member with such token can access application documents",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 54,
+                  "score": ""
+                },
+                {
+                  "id": "739b072c-3fdb-48af-aed5-11756ac6081e",
+                  "title": "Repudiation of action",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "An unauthorized council member can deny having accessed or manipulated application data, even if they have done so",
+                  "mitigation": "Ensure that only council members with an auth token can access or manipulate the data.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 55,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -2426,6 +2532,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 53
+    "threatTop": 61
   }
 }
