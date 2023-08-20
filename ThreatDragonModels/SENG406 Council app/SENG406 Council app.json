@@ -86,14 +86,14 @@
             "shape": "trust-boundary-box",
             "attrs": {
               "headerText": {
-                "text": "General Application System"
+                "text": "Public Application System"
               }
             },
             "zIndex": -1,
             "id": "11f4de20-4ef5-4d5c-af62-c9bbefd8452f",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "General Application System",
+              "name": "Public Application System",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -1804,12 +1804,12 @@
             },
             "id": "8ab2e83e-fed5-4b5d-9d52-d48ceec2d30c",
             "source": {
-              "x": 1450,
-              "y": 570
+              "x": 1490,
+              "y": 560
             },
             "target": {
-              "x": 1450,
-              "y": 570
+              "x": 1490,
+              "y": 560
             },
             "vertices": [
               {
@@ -1836,6 +1836,96 @@
                 "x": 1650,
                 "y": 150
               }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Admin Credentials",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "efaf7e36-c566-4236-ae53-1a798f6b3762",
+            "source": {
+              "cell": "da8222e8-9793-4f75-b84c-b9c3d59e6050"
+            },
+            "target": {
+              "cell": "6c51a5e7-ef0b-4681-a83e-8418175befe4"
+            },
+            "vertices": [
+              {
+                "x": 1280,
+                "y": 470
+              }
+            ],
+            "labels": [
+              "Admin Credentials"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Token",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "e1127dc8-19d4-4ae9-b45c-0c08318ee3ea",
+            "source": {
+              "cell": "6c51a5e7-ef0b-4681-a83e-8418175befe4"
+            },
+            "target": {
+              "cell": "da8222e8-9793-4f75-b84c-b9c3d59e6050"
+            },
+            "vertices": [
+              {
+                "x": 1120,
+                "y": 520
+              }
+            ],
+            "labels": [
+              "Token"
             ]
           },
           {
@@ -2302,8 +2392,8 @@
           },
           {
             "position": {
-              "x": 510,
-              "y": 305.0000000000007
+              "x": 720,
+              "y": 290
             },
             "size": {
               "width": 50,
@@ -2415,8 +2505,8 @@
           },
           {
             "position": {
-              "x": 811.9999999999998,
-              "y": 444.47916666666646
+              "x": 733.5,
+              "y": 459.3333333333333
             },
             "size": {
               "width": 100,
