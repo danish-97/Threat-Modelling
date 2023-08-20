@@ -199,8 +199,8 @@
                 "text": "Applicant"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
+                "stroke": "red",
+                "strokeWidth": 3,
                 "strokeDasharray": null
               }
             },
@@ -215,7 +215,7 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "threats": [
                 {
                   "id": "90661720-cf48-4bb6-9b63-02bd51265bcc",
@@ -241,6 +241,19 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 29,
+                  "score": ""
+                },
+                {
+                  "id": "5710a2fd-faa8-4480-baf8-bc2978b8b29f",
+                  "title": "Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Malicious actors can impersonate legitimate users to gain unauthorized access to the application or to perform actions they shouldn't be able to.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 48,
                   "score": ""
                 }
               ]
@@ -2362,8 +2375,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "ab7bfa78-d355-4094-be4f-d2f01a11bc7b",
             "zIndex": 31,
+            "id": "ab7bfa78-d355-4094-be4f-d2f01a11bc7b",
             "data": {
               "type": "tm.Actor",
               "name": "Third-party\nProviders",
@@ -2381,6 +2394,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 47
+    "threatTop": 48
   }
 }
