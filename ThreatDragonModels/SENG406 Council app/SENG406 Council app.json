@@ -224,7 +224,7 @@
                   "severity": "Medium",
                   "type": "Repudiation",
                   "description": "The applicant can deny their submission or actions",
-                  "mitigation": "Implement comprehensive logging of actions taken by the applicant and ensure that audit logs cannot be tampered, or if tampered, is evident that it has been done so.",
+                  "mitigation": "Implement comprehensive logging of actions taken by the applicant and ensure that audit logs cannot be tampered.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 2,
@@ -838,51 +838,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Document\nrequest",
-              "description": "Request for additional document for the applicant",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "9f32f0b6-7d5b-47a6-a051-6c342342bc28",
-            "labels": [
-              "Document\nrequest"
-            ],
-            "source": {
-              "cell": "62f60685-0a58-44e4-b573-1e5d2d4c6218"
-            },
-            "target": {
-              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
-            },
-            "vertices": [
-              {
-                "x": 960,
-                "y": 40
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Additional documents",
               "description": "",
               "outOfScope": false,
@@ -1239,64 +1194,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Application summary",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "a9566798-4c63-4cfb-8c62-36f150c0d77d",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "An adversary could intercept this and gain access to the application details",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 22,
-                  "score": ""
-                }
-              ]
-            },
-            "id": "4f26ee66-158a-4257-a26d-80b23c5c093d",
-            "labels": [
-              "Application summary"
-            ],
-            "source": {
-              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
-            },
-            "target": {
-              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
-            },
-            "vertices": [
-              {
-                "x": 1090,
-                "y": -380
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "#333333",
                 "strokeWidth": 1,
                 "targetMarker": {
@@ -1476,8 +1373,12 @@
             },
             "vertices": [
               {
-                "x": 850,
-                "y": 490
+                "x": 510,
+                "y": 420
+              },
+              {
+                "x": 1010,
+                "y": 420
               }
             ]
           },
@@ -1603,6 +1504,9 @@
               "threats": []
             },
             "id": "a94e11ef-1031-4d77-8fe3-b92988769c73",
+            "labels": [
+              "Updated\nstaff\ndetails"
+            ],
             "source": {
               "cell": "e00fe644-311e-4790-ac36-c8786545f10b"
             },
@@ -1614,9 +1518,109 @@
                 "x": 1180,
                 "y": 271.91
               }
-            ],
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Application summary",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "id": "a9566798-4c63-4cfb-8c62-36f150c0d77d",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An adversary could intercept this and gain access to the application details",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "4f26ee66-158a-4257-a26d-80b23c5c093d",
             "labels": [
-              "Updated\nstaff\ndetails"
+              "Application summary"
+            ],
+            "source": {
+              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
+            },
+            "target": {
+              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+            },
+            "vertices": [
+              {
+                "x": 1090,
+                "y": -380
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Document\nrequest",
+              "description": "Request for additional document for the applicant",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "9f32f0b6-7d5b-47a6-a051-6c342342bc28",
+            "labels": [
+              "Document\nrequest"
+            ],
+            "source": {
+              "cell": "62f60685-0a58-44e4-b573-1e5d2d4c6218"
+            },
+            "target": {
+              "cell": "efde8934-0d0a-41fb-b969-d879a2280385"
+            },
+            "vertices": [
+              {
+                "x": 960,
+                "y": 40
+              }
             ]
           },
           {
@@ -1633,8 +1637,8 @@
                 "text": "Application\n Submission"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
+                "stroke": "red",
+                "strokeWidth": 3,
                 "strokeDasharray": null
               }
             },
@@ -1649,16 +1653,16 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "threats": [
                 {
                   "id": "6fbdba9f-a387-40c2-ac9c-6b73f6a9fb68",
                   "title": "Impersonating",
-                  "status": "Mitigated",
+                  "status": "Open",
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "Malicious actors could impersonate legitimate applicants during the application submission process",
-                  "mitigation": "Implement strong authentication methods such as MFA (multi-factor authentication)",
+                  "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 8,
