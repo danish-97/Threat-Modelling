@@ -2072,6 +2072,19 @@
                   "new": false,
                   "number": 76,
                   "score": ""
+                },
+                {
+                  "id": "375ce342-5a57-406a-a486-d8b061efb8d2",
+                  "title": "Unauthorized removal of staff",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Attackers could manipulate data to remove legitimate staff members ",
+                  "mitigation": "Implement authorization checks with the process, validate input and restrict admin rights",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 80,
+                  "score": ""
                 }
               ]
             }
@@ -2696,6 +2709,32 @@
                   "new": false,
                   "number": 30,
                   "score": ""
+                },
+                {
+                  "id": "12ea0e98-cf9e-4343-bf3d-a24288d6e5be",
+                  "title": "Spoofing of staff details",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Attackers could impersonate an admin or council member and send falsified staff details",
+                  "mitigation": "* Implement strong authentication for admin and council members, using methods such as MFA.\n* Validate sender identity before storing details\n* Sanitize incoming data to ensure that there is nothing in there that there shouldn't be",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 77,
+                  "score": ""
+                },
+                {
+                  "id": "cf5e841b-65ab-4ab8-9791-3b7f31c8056f",
+                  "title": "Unauthorized editing of staff",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Attackers could manipulate data to make unauthorized staff members have elevated privileges or remove the privileges of authorized staff members",
+                  "mitigation": "Implement authorization checks within the process, validate input, and restrict admin access rights.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 81,
+                  "score": ""
                 }
               ]
             }
@@ -2706,6 +2745,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 76
+    "threatTop": 81
   }
 }
