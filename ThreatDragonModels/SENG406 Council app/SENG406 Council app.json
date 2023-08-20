@@ -2093,7 +2093,34 @@
               "reasonOutOfScope": "",
               "privilegeLevel": "",
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "110397a3-5169-4c49-a6e2-c15402192a92",
+                  "title": "Spoofing of staff details",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Attackers could impersonate an admin and send falsified staff details to the database",
+                  "mitigation": "* Implement strong authentication for admins, using methods such as MFA.\n* Validate sender identity before storing details in the database\n* Sanitize incoming data",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 72,
+                  "score": ""
+                },
+                {
+                  "id": "f73c9494-f147-4761-8625-c85d5b919cbe",
+                  "title": "Unauthorised staff addition",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Attackers could manipulate data to add unauthorized staff members with elevated privileges.",
+                  "mitigation": "Implement authorization checks within the process, validate input, and restrict admin access rights",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 73,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -2639,6 +2666,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 71
+    "threatTop": 73
   }
 }
