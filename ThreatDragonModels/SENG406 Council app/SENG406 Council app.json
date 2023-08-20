@@ -1,9 +1,9 @@
 {
-  "version": "2.0.4-RC2",
+  "version": "2.0.5",
   "summary": {
     "title": "SENG406 Council app",
     "owner": "Jack",
-    "description": "",
+    "description": "The system under study is a web-based building consent application platform designed to streamline the process of submitting applications for building consents to the Council. This document presents a high-level system description of the application's architecture and the identified security concerns using the STRIDE threat model.\n\n\nSystem Overview:\nThe application consists of various actors, including applicants, council staff, and administrators. It offers processes such as application submission, review, staff management, and decision communication. Data flows occur between actors and various system components, including databases and external email services. The following features are within the app.\n  * individuals can submit building consent applications through the application containing supporting documents and personal details.\n  * Logged in Council members can view . \n  * all types of registered users can log into the app; they will have access to a separate subsystem of the app, depending on their type.\n  * end-users order food\n  * restaurants prepare food\n  * drivers deliver food prepared by restaurants to end-users\n\nEnd-user app\n  * contains private details, i.e. contact details, address, and bank / PayPal account\n  * order food to restaurants\n  * review restaurants\n  * pay via app\n  * can tip, and review driver\n\nRestaurant app\n  * contains bank account, and business details\n  * food safety information on menu items (e.g., allergen)\n  * negotiated margin, and service fee (private to a restaurant)\n  * receive orders from end-users\n  * authenticate, match driver and ordered food\n\nDriver app\n  * receive delivery requests\n  * can combine multiple orders from same restaurant\n  * send ETA to users and display GPS-located route, unless driver is delivering another end-user\n  * can communicate to the end-users with short messages\n\nTrust levels (privileges):\n  0. Anonymous\n  1. user with invalid credentials\n  2. end-user (i.e. logged in)\n  3. restaurant (i.e. logged in)\n  4. driver (i.e. logged in)",
     "id": 0
   },
   "detail": {
