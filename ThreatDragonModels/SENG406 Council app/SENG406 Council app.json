@@ -51,12 +51,12 @@
           },
           {
             "position": {
-              "x": 299.9999999999997,
-              "y": 115.00000000000065
+              "x": 431.9999999999998,
+              "y": 115.0000000000007
             },
             "size": {
-              "width": 512.0000000000001,
-              "height": 240
+              "width": 380,
+              "height": 178.12499999999997
             },
             "shape": "trust-boundary-box",
             "attrs": {
@@ -119,6 +119,56 @@
             "data": {
               "type": "tm.BoundaryBox",
               "name": "User management",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 162.66666666666663,
+              "y": -582.1875
+            },
+            "size": {
+              "width": 410,
+              "height": 192.18750000000003
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Notification system"
+              }
+            },
+            "id": "37dbeb09-3ab0-4bdb-8e25-e2120667a317",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Notification system",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 374.66666666666674,
+              "y": -491.5625
+            },
+            "size": {
+              "width": 180,
+              "height": 84.375
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Email system"
+              }
+            },
+            "id": "a9f31a23-f728-4f6e-9896-f7c12c3c3d8b",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Email system",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -200,8 +250,8 @@
           },
           {
             "position": {
-              "x": 737.25,
-              "y": -450
+              "x": 772.5000000000005,
+              "y": -467.1875
             },
             "size": {
               "width": 112.5,
@@ -388,7 +438,13 @@
             },
             "target": {
               "cell": "62f60685-0a58-44e4-b573-1e5d2d4c6218"
-            }
+            },
+            "vertices": [
+              {
+                "x": 710,
+                "y": 420
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -469,8 +525,8 @@
             },
             "vertices": [
               {
-                "x": 480,
-                "y": 70
+                "x": 670,
+                "y": 80
               }
             ]
           },
@@ -638,8 +694,8 @@
             },
             "vertices": [
               {
-                "x": 250,
-                "y": 100
+                "x": 400,
+                "y": 150
               }
             ]
           },
@@ -723,8 +779,8 @@
             },
             "vertices": [
               {
-                "x": 370,
-                "y": 400
+                "x": 490,
+                "y": 390
               }
             ]
           },
@@ -1173,8 +1229,16 @@
                 "y": -230
               },
               {
-                "x": 550,
-                "y": -320
+                "x": 150,
+                "y": -590
+              },
+              {
+                "x": 630,
+                "y": -590
+              },
+              {
+                "x": 700,
+                "y": -360
               },
               {
                 "x": 1510,
@@ -1772,6 +1836,45 @@
             "vertices": []
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Notification \nemail",
+              "description": "Email informing the applicant that they have a notification",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "edb82214-c71d-4911-8339-7609b13821e3",
+            "source": {
+              "cell": "13ceaa95-7483-4bc7-8f3e-fb557e692797"
+            },
+            "target": {
+              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+            },
+            "labels": [
+              "Notification \nemail"
+            ]
+          },
+          {
             "position": {
               "x": 210,
               "y": -270
@@ -1886,8 +1989,8 @@
           },
           {
             "position": {
-              "x": 346,
-              "y": 161.16666666666694
+              "x": 540,
+              "y": 175.00000000000065
             },
             "size": {
               "width": 90,
@@ -2449,8 +2552,8 @@
           },
           {
             "position": {
-              "x": 555.9999999999998,
-              "y": 195.00000000000065
+              "x": 704.6666666666667,
+              "y": 175.00000000000065
             },
             "size": {
               "width": 80,
@@ -2623,7 +2726,7 @@
           },
           {
             "position": {
-              "x": 934,
+              "x": 1010.0000000000005,
               "y": -98.98958333333385
             },
             "size": {
@@ -2705,8 +2808,8 @@
           },
           {
             "position": {
-              "x": 1034,
-              "y": -450
+              "x": 1040.0000000000005,
+              "y": -440
             },
             "size": {
               "width": 112.5,
@@ -2767,6 +2870,80 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 435.9999999999998,
+              "y": -467.1875
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Email \nService"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "13ceaa95-7483-4bc7-8f3e-fb557e692797",
+            "zIndex": 35,
+            "data": {
+              "type": "tm.Process",
+              "name": "Email \nService",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 190,
+              "y": -467
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Notification\nStore"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "f88b26c5-cae5-41b9-a9c7-0130199e911f",
+            "zIndex": 36,
+            "data": {
+              "type": "tm.Store",
+              "name": "Notification\nStore",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
               "hasOpenThreats": false,
               "threats": []
             }
