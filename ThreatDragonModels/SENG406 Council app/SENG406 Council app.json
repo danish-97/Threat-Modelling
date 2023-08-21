@@ -832,7 +832,12 @@
             "target": {
               "cell": "00e963fc-4a05-4b60-ae81-3f598744c485"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 600,
+                "y": -380
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1675,8 +1680,8 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Application ID",
-              "description": "The unique identifier of the application to be edited.",
+              "name": "Data Flow",
+              "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "protocol": "",
@@ -1685,16 +1690,13 @@
               "hasOpenThreats": false,
               "threats": []
             },
-            "id": "3e398765-3fce-40a7-b4dd-bd3eee6cca74",
+            "id": "13485881-5a35-4136-816e-9029735306da",
             "source": {
               "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
             },
             "target": {
-              "cell": "19855089-b57c-4518-a10a-c59d7804f815"
-            },
-            "labels": [
-              "Application ID"
-            ]
+              "cell": "aabdabd3-aff6-400a-b7e7-61ad915781b6"
+            }
           },
           {
             "shape": "flow",
@@ -1714,8 +1716,8 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
+              "name": "Application details",
+              "description": "The details and supporting documents required to update the selected application.",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "protocol": "",
@@ -1724,13 +1726,16 @@
               "hasOpenThreats": false,
               "threats": []
             },
-            "id": "13485881-5a35-4136-816e-9029735306da",
+            "id": "3e398765-3fce-40a7-b4dd-bd3eee6cca74",
             "source": {
               "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
             },
             "target": {
-              "cell": "aabdabd3-aff6-400a-b7e7-61ad915781b6"
-            }
+              "cell": "19855089-b57c-4518-a10a-c59d7804f815"
+            },
+            "labels": [
+              "Application details"
+            ]
           },
           {
             "position": {
@@ -2506,7 +2511,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Edit\nStaff"
+                "text": "Edit\nUser"
               },
               "body": {
                 "stroke": "#333333",
@@ -2520,7 +2525,7 @@
             "id": "e00fe644-311e-4790-ac36-c8786545f10b",
             "data": {
               "type": "tm.Process",
-              "name": "Edit\nStaff",
+              "name": "Edit\nUser",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
