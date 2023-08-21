@@ -1079,65 +1079,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Token",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": [
-                {
-                  "id": "c7141fe5-5d69-4d51-9e19-4876194f7f74",
-                  "title": "Session token ",
-                  "status": "Mitigated",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "An adversary could intercept the login response and gain knowledge about the users session token",
-                  "mitigation": "Use secure communication methods",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 33,
-                  "score": ""
-                }
-              ]
-            },
-            "id": "1f2fdd92-62b4-4436-8fca-7d6fa7b1fd2c",
-            "labels": [
-              "Token"
-            ],
-            "source": {
-              "cell": "6c51a5e7-ef0b-4681-a83e-8418175befe4"
-            },
-            "target": {
-              "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
-            },
-            "vertices": [
-              {
-                "x": 640,
-                "y": 330
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Staff \ndetails",
               "description": "",
               "outOfScope": false,
@@ -2023,6 +1964,65 @@
               "x": 390,
               "y": -350
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Token",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "id": "c7141fe5-5d69-4d51-9e19-4876194f7f74",
+                  "title": "Session token ",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An adversary could intercept the login response and gain knowledge about the users session token",
+                  "mitigation": "Use secure communication methods",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 33,
+                  "score": ""
+                }
+              ]
+            },
+            "id": "1f2fdd92-62b4-4436-8fca-7d6fa7b1fd2c",
+            "labels": [
+              "Token"
+            ],
+            "source": {
+              "cell": "6c51a5e7-ef0b-4681-a83e-8418175befe4"
+            },
+            "target": {
+              "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 330
+              }
+            ]
           },
           {
             "position": {
