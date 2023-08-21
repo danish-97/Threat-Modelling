@@ -1257,43 +1257,6 @@
               "hasOpenThreats": false,
               "threats": []
             },
-            "id": "400b91c3-1e09-4b31-8a13-03db6795c4d5",
-            "source": {
-              "cell": "9e1b450a-0788-4ec8-bce9-25caa959fc85"
-            },
-            "target": {
-              "cell": "b017a769-880d-4853-a280-172a3d69b046"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
             "id": "13923285-8a89-46b9-85e6-063fd5f10b23",
             "source": {
               "cell": "b017a769-880d-4853-a280-172a3d69b046"
@@ -1336,42 +1299,6 @@
             },
             "target": {
               "cell": "1c3ee008-5d88-4cad-9d66-4165dea3e0d8"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "0d24e2d1-2327-4fe2-ba4a-68d14b585b1b",
-            "source": {
-              "cell": "9e1b450a-0788-4ec8-bce9-25caa959fc85"
-            },
-            "target": {
-              "cell": "6c51a5e7-ef0b-4681-a83e-8418175befe4"
             }
           },
           {
@@ -1738,6 +1665,86 @@
             ],
             "labels": [
               "Token"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Credentials",
+              "description": "Credentials for the applicant to login to the system.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "0d24e2d1-2327-4fe2-ba4a-68d14b585b1b",
+            "source": {
+              "cell": "9e1b450a-0788-4ec8-bce9-25caa959fc85"
+            },
+            "target": {
+              "cell": "6c51a5e7-ef0b-4681-a83e-8418175befe4"
+            },
+            "vertices": [],
+            "labels": [
+              "Credentials"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User\nDetails",
+              "description": "Details about the user including name, email, phone number and password.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "400b91c3-1e09-4b31-8a13-03db6795c4d5",
+            "source": {
+              "cell": "9e1b450a-0788-4ec8-bce9-25caa959fc85"
+            },
+            "target": {
+              "cell": "b017a769-880d-4853-a280-172a3d69b046"
+            },
+            "vertices": [],
+            "labels": [
+              "User\nDetails"
             ]
           },
           {
