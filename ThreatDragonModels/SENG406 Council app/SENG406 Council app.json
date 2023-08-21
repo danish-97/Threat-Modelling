@@ -181,6 +181,19 @@
                   "new": false,
                   "number": 5,
                   "score": ""
+                },
+                {
+                  "id": "3ae141c1-032c-4a3a-81ad-cec51820cd95",
+                  "title": "Repudiation of calls",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "The threat of staff members denying actions relating to calling the client. ",
+                  "mitigation": "Calls are performed using a council phone",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 90,
+                  "score": ""
                 }
               ]
             }
@@ -753,46 +766,6 @@
                 "y": 240
               }
             ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Staff \ndetails",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "174b4922-60c1-479e-bb8e-dc5e8bd9186e",
-            "labels": [
-              "Staff \ndetails"
-            ],
-            "source": {
-              "cell": "1c3ee008-5d88-4cad-9d66-4165dea3e0d8"
-            },
-            "target": {
-              "cell": "6c51a5e7-ef0b-4681-a83e-8418175befe4"
-            },
-            "vertices": []
           },
           {
             "shape": "flow",
@@ -1787,64 +1760,6 @@
             ]
           },
           {
-            "shape": "trust-broundary-curve",
-            "attrs": {
-              "line": {
-                "targetMarker": "",
-                "sourceMarker": ""
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "labels": [
-              "AWS hosting service"
-            ],
-            "data": {
-              "type": "tm.Boundary",
-              "name": "AWS hosting service",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "8ab2e83e-fed5-4b5d-9d52-d48ceec2d30c",
-            "source": {
-              "x": 1490,
-              "y": 560
-            },
-            "target": {
-              "x": 1490,
-              "y": 560
-            },
-            "vertices": [
-              {
-                "x": 300,
-                "y": 390
-              },
-              {
-                "x": 110,
-                "y": -230
-              },
-              {
-                "x": 550,
-                "y": -320
-              },
-              {
-                "x": 880,
-                "y": -290
-              },
-              {
-                "x": 990,
-                "y": -60
-              },
-              {
-                "x": 1650,
-                "y": 150
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -1952,8 +1867,48 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "User credentials",
+              "description": "User's names and login details",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "174b4922-60c1-479e-bb8e-dc5e8bd9186e",
+            "labels": [
+              "User credentials"
+            ],
+            "source": {
+              "cell": "1c3ee008-5d88-4cad-9d66-4165dea3e0d8"
+            },
+            "target": {
+              "cell": "6c51a5e7-ef0b-4681-a83e-8418175befe4"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Document request",
-              "description": "",
+              "description": "A call to the applicant to request additional documents",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "protocol": "",
@@ -1978,6 +1933,96 @@
             "labels": [
               "Document request"
             ]
+          },
+          {
+            "shape": "trust-broundary-curve",
+            "attrs": {
+              "line": {
+                "targetMarker": "",
+                "sourceMarker": ""
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "labels": [
+              "AWS hosting provider"
+            ],
+            "data": {
+              "type": "tm.Boundary",
+              "name": "AWS hosting provider",
+              "description": "Third party network that the site's network is deployed on.",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "8ab2e83e-fed5-4b5d-9d52-d48ceec2d30c",
+            "source": {
+              "x": 1490,
+              "y": 560
+            },
+            "target": {
+              "x": 1490,
+              "y": 560
+            },
+            "vertices": [
+              {
+                "x": 300,
+                "y": 390
+              },
+              {
+                "x": 110,
+                "y": -230
+              },
+              {
+                "x": 550,
+                "y": -320
+              },
+              {
+                "x": 880,
+                "y": -290
+              },
+              {
+                "x": 990,
+                "y": -60
+              },
+              {
+                "x": 1650,
+                "y": 150
+              }
+            ]
+          },
+          {
+            "shape": "trust-broundary-curve",
+            "attrs": {
+              "line": {
+                "targetMarker": "",
+                "sourceMarker": ""
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "labels": [
+              "Phone\nSystem"
+            ],
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Phone\nSystem",
+              "description": "The council phone network that call are made through",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "89713e22-93f5-413e-bf52-62db02a12c3a",
+            "source": {
+              "x": 300,
+              "y": -460
+            },
+            "target": {
+              "x": 390,
+              "y": -350
+            }
           },
           {
             "position": {
@@ -2983,6 +3028,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 86
+    "threatTop": 90
   }
 }
