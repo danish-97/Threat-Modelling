@@ -1487,42 +1487,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "13485881-5a35-4136-816e-9029735306da",
-            "source": {
-              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
-            },
-            "target": {
-              "cell": "aabdabd3-aff6-400a-b7e7-61ad915781b6"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Application details",
               "description": "The details and supporting documents required to update the selected application.",
               "outOfScope": false,
@@ -1940,51 +1904,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Token",
-              "description": "The users token to prove their identity",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "1db1cd01-aa6e-4268-9415-3254ff16a341",
-            "source": {
-              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
-            },
-            "target": {
-              "cell": "ae7a9a41-58f0-4702-b2a1-ff8e5fefca3a"
-            },
-            "vertices": [
-              {
-                "x": 480,
-                "y": -510
-              }
-            ],
-            "labels": [
-              "Token"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Notification details",
               "description": "Details of the additional document request",
               "outOfScope": false,
@@ -2008,8 +1927,8 @@
                 "y": -90
               },
               {
-                "x": 600,
-                "y": -300
+                "x": 610,
+                "y": -290
               }
             ],
             "labels": [
@@ -2053,6 +1972,136 @@
             },
             "labels": [
               "Notification "
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "abd0b6bd-1436-45fb-8b80-45b67592eff8",
+            "source": {
+              "cell": "b79aa5bf-4764-481c-bc51-a48032442827"
+            },
+            "target": {
+              "cell": "f88b26c5-cae5-41b9-a9c7-0130199e911f"
+            },
+            "vertices": [
+              {
+                "x": 200,
+                "y": 110
+              },
+              {
+                "x": 150,
+                "y": -230
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Token",
+              "description": "The user's token to prove their identity",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "1db1cd01-aa6e-4268-9415-3254ff16a341",
+            "source": {
+              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+            },
+            "target": {
+              "cell": "ae7a9a41-58f0-4702-b2a1-ff8e5fefca3a"
+            },
+            "vertices": [
+              {
+                "x": 480,
+                "y": -510
+              }
+            ],
+            "labels": [
+              "Token"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Token",
+              "description": "The user's token to prove their identity",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "13485881-5a35-4136-816e-9029735306da",
+            "source": {
+              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+            },
+            "target": {
+              "cell": "aabdabd3-aff6-400a-b7e7-61ad915781b6"
+            },
+            "labels": [
+              "Token"
             ]
           },
           {
@@ -2170,8 +2219,8 @@
           },
           {
             "position": {
-              "x": 540,
-              "y": 175.00000000000065
+              "x": 479.66666666666674,
+              "y": 159.06250000000068
             },
             "size": {
               "width": 90,
