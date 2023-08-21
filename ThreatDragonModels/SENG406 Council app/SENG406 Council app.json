@@ -1,5 +1,5 @@
 {
-  "version": "2.0.5",
+  "version": "2.0.4-RC2",
   "summary": {
     "title": "SENG406 Council app",
     "owner": "Jack",
@@ -1859,6 +1859,9 @@
               "threats": []
             },
             "id": "96c701a1-c799-4aff-b1fa-8a791aeabb6c",
+            "labels": [
+              "Document request"
+            ],
             "source": {
               "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
             },
@@ -1870,9 +1873,6 @@
                 "x": 70,
                 "y": -310
               }
-            ],
-            "labels": [
-              "Document request"
             ]
           },
           {
@@ -1907,6 +1907,10 @@
               "y": 560
             },
             "vertices": [
+              {
+                "x": 740,
+                "y": 460
+              },
               {
                 "x": 300,
                 "y": 390
@@ -2602,7 +2606,7 @@
           {
             "position": {
               "x": 733.5,
-              "y": 459.3333333333333
+              "y": 480
             },
             "size": {
               "width": 100,
