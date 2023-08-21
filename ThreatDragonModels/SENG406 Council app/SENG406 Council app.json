@@ -1,5 +1,5 @@
 {
-  "version": "2.0.5",
+  "version": "2.0.4-RC2",
   "summary": {
     "title": "SENG406 Council app",
     "owner": "Jack",
@@ -139,8 +139,8 @@
                 "text": "Notification system"
               }
             },
-            "id": "37dbeb09-3ab0-4bdb-8e25-e2120667a317",
             "zIndex": -1,
+            "id": "37dbeb09-3ab0-4bdb-8e25-e2120667a317",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Notification system",
@@ -164,8 +164,8 @@
                 "text": "Email system"
               }
             },
-            "id": "a9f31a23-f728-4f6e-9896-f7c12c3c3d8b",
             "zIndex": -1,
+            "id": "a9f31a23-f728-4f6e-9896-f7c12c3c3d8b",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Email system",
@@ -1735,15 +1735,15 @@
               "threats": []
             },
             "id": "edb82214-c71d-4911-8339-7609b13821e3",
+            "labels": [
+              "Notification \nemail"
+            ],
             "source": {
               "cell": "13ceaa95-7483-4bc7-8f3e-fb557e692797"
             },
             "target": {
               "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
-            },
-            "labels": [
-              "Notification \nemail"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -1774,15 +1774,15 @@
               "threats": []
             },
             "id": "a51391fa-4e41-45d2-b894-d387084a90f7",
+            "labels": [
+              "Notification details"
+            ],
             "source": {
               "cell": "f88b26c5-cae5-41b9-a9c7-0130199e911f"
             },
             "target": {
               "cell": "ae7a9a41-58f0-4702-b2a1-ff8e5fefca3a"
-            },
-            "labels": [
-              "Notification details"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -1813,6 +1813,9 @@
               "threats": []
             },
             "id": "15fec56b-954a-48d2-ba6a-fdcaf073a8b3",
+            "labels": [
+              "Notification details"
+            ],
             "source": {
               "cell": "ae7a9a41-58f0-4702-b2a1-ff8e5fefca3a"
             },
@@ -1824,9 +1827,6 @@
                 "x": 520,
                 "y": -538.19
               }
-            ],
-            "labels": [
-              "Notification details"
             ]
           },
           {
@@ -1858,6 +1858,9 @@
               "threats": []
             },
             "id": "894673ac-7f0d-4fe2-bd19-766a3116883a",
+            "labels": [
+              "Notification details"
+            ],
             "source": {
               "cell": "62f60685-0a58-44e4-b573-1e5d2d4c6218"
             },
@@ -1873,9 +1876,6 @@
                 "x": 610,
                 "y": -290
               }
-            ],
-            "labels": [
-              "Notification details"
             ]
           },
           {
@@ -1907,15 +1907,15 @@
               "threats": []
             },
             "id": "121a5896-f594-4ec7-b6d4-8f05a318c759",
+            "labels": [
+              "Notification "
+            ],
             "source": {
               "cell": "f88b26c5-cae5-41b9-a9c7-0130199e911f"
             },
             "target": {
               "cell": "13ceaa95-7483-4bc7-8f3e-fb557e692797"
-            },
-            "labels": [
-              "Notification "
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -1992,6 +1992,9 @@
               "threats": []
             },
             "id": "1db1cd01-aa6e-4268-9415-3254ff16a341",
+            "labels": [
+              "Token"
+            ],
             "source": {
               "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
             },
@@ -2003,9 +2006,6 @@
                 "x": 480,
                 "y": -510
               }
-            ],
-            "labels": [
-              "Token"
             ]
           },
           {
@@ -2037,15 +2037,15 @@
               "threats": []
             },
             "id": "13485881-5a35-4136-816e-9029735306da",
+            "labels": [
+              "Token"
+            ],
             "source": {
               "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
             },
             "target": {
               "cell": "aabdabd3-aff6-400a-b7e7-61ad915781b6"
-            },
-            "labels": [
-              "Token"
-            ]
+            }
           },
           {
             "shape": "trust-broundary-curve",
@@ -3130,8 +3130,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "13ceaa95-7483-4bc7-8f3e-fb557e692797",
             "zIndex": 35,
+            "id": "13ceaa95-7483-4bc7-8f3e-fb557e692797",
             "data": {
               "type": "tm.Process",
               "name": "Email \nService",
@@ -3204,8 +3204,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "ae7a9a41-58f0-4702-b2a1-ff8e5fefca3a",
             "zIndex": 37,
+            "id": "ae7a9a41-58f0-4702-b2a1-ff8e5fefca3a",
             "data": {
               "type": "tm.Process",
               "name": "Notification\ninbox",
