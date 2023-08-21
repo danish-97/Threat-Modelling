@@ -1139,7 +1139,13 @@
             },
             "target": {
               "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
-            }
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 330
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1867,6 +1873,9 @@
               "threats": []
             },
             "id": "efaf7e36-c566-4236-ae53-1a798f6b3762",
+            "labels": [
+              "Admin Credentials"
+            ],
             "source": {
               "cell": "da8222e8-9793-4f75-b84c-b9c3d59e6050"
             },
@@ -1878,9 +1887,6 @@
                 "x": 1280,
                 "y": 470
               }
-            ],
-            "labels": [
-              "Admin Credentials"
             ]
           },
           {
@@ -1912,6 +1918,9 @@
               "threats": []
             },
             "id": "e1127dc8-19d4-4ae9-b45c-0c08318ee3ea",
+            "labels": [
+              "Token"
+            ],
             "source": {
               "cell": "6c51a5e7-ef0b-4681-a83e-8418175befe4"
             },
@@ -1923,9 +1932,51 @@
                 "x": 1120,
                 "y": 520
               }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Document request",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "96c701a1-c799-4aff-b1fa-8a791aeabb6c",
+            "source": {
+              "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
+            },
+            "target": {
+              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+            },
+            "vertices": [
+              {
+                "x": 70,
+                "y": -310
+              }
             ],
             "labels": [
-              "Token"
+              "Document request"
             ]
           },
           {
