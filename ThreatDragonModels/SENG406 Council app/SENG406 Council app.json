@@ -3691,42 +3691,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "cf6c5767-cf8e-4e1a-ae71-5156a78e3922",
-            "source": {
-              "cell": "b017a769-880d-4853-a280-172a3d69b046"
-            },
-            "target": {
-              "cell": "1c3ee008-5d88-4cad-9d66-4165dea3e0d8"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Application details",
               "description": "The details and supporting documents required to update the selected application.",
               "outOfScope": false,
