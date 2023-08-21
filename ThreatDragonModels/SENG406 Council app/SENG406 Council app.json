@@ -1697,6 +1697,42 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "13485881-5a35-4136-816e-9029735306da",
+            "source": {
+              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+            },
+            "target": {
+              "cell": "aabdabd3-aff6-400a-b7e7-61ad915781b6"
+            }
+          },
+          {
             "position": {
               "x": 210,
               "y": -270
@@ -2611,7 +2647,21 @@
               "reasonOutOfScope": "",
               "privilegeLevel": "",
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "1b7e424e-815b-4714-8773-f1d0ca9c86cd",
+                  "title": "Application details can be stoled",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "An attacker with an application ID can navigate directly to the page or search for the application.",
+                  "mitigation": "Applications require an associated applicant to be signed in to view.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 91,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -2688,6 +2738,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Jack",
-    "threatTop": 90
+    "threatTop": 91
   }
 }
