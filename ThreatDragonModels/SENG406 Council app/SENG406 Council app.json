@@ -126,12 +126,12 @@
           },
           {
             "position": {
-              "x": 162.66666666666663,
+              "x": 122.66666666666663,
               "y": -582.1875
             },
             "size": {
-              "width": 410,
-              "height": 192.18750000000003
+              "width": 450,
+              "height": 210.93750000000003
             },
             "shape": "trust-boundary-box",
             "attrs": {
@@ -525,7 +525,7 @@
             },
             "vertices": [
               {
-                "x": 670,
+                "x": 660,
                 "y": 80
               }
             ]
@@ -1229,8 +1229,8 @@
                 "y": -230
               },
               {
-                "x": 150,
-                "y": -590
+                "x": 110,
+                "y": -610
               },
               {
                 "x": 630,
@@ -1347,42 +1347,6 @@
             },
             "target": {
               "cell": "1c3ee008-5d88-4cad-9d66-4165dea3e0d8"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "strokeWidth": 1,
-                "targetMarker": {
-                  "name": "classic"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
-            "id": "894673ac-7f0d-4fe2-bd19-766a3116883a",
-            "source": {
-              "cell": "62f60685-0a58-44e4-b573-1e5d2d4c6218"
-            },
-            "target": {
-              "cell": "19855089-b57c-4518-a10a-c59d7804f815"
             }
           },
           {
@@ -1875,9 +1839,226 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Notification details",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "a51391fa-4e41-45d2-b894-d387084a90f7",
+            "source": {
+              "cell": "f88b26c5-cae5-41b9-a9c7-0130199e911f"
+            },
+            "target": {
+              "cell": "ae7a9a41-58f0-4702-b2a1-ff8e5fefca3a"
+            },
+            "labels": [
+              "Notification details"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Notification details",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "15fec56b-954a-48d2-ba6a-fdcaf073a8b3",
+            "source": {
+              "cell": "ae7a9a41-58f0-4702-b2a1-ff8e5fefca3a"
+            },
+            "target": {
+              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+            },
+            "vertices": [
+              {
+                "x": 520,
+                "y": -538.19
+              }
+            ],
+            "labels": [
+              "Notification details"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Token",
+              "description": "The users token to prove their identity",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "1db1cd01-aa6e-4268-9415-3254ff16a341",
+            "source": {
+              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+            },
+            "target": {
+              "cell": "ae7a9a41-58f0-4702-b2a1-ff8e5fefca3a"
+            },
+            "vertices": [
+              {
+                "x": 480,
+                "y": -510
+              }
+            ],
+            "labels": [
+              "Token"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Notification details",
+              "description": "Details of the additional document request",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "894673ac-7f0d-4fe2-bd19-766a3116883a",
+            "source": {
+              "cell": "62f60685-0a58-44e4-b573-1e5d2d4c6218"
+            },
+            "target": {
+              "cell": "f88b26c5-cae5-41b9-a9c7-0130199e911f"
+            },
+            "vertices": [
+              {
+                "x": 710,
+                "y": -90
+              },
+              {
+                "x": 600,
+                "y": -300
+              }
+            ],
+            "labels": [
+              "Notification details"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Notification ",
+              "description": "Trigger to send an email when a notification is added",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "121a5896-f594-4ec7-b6d4-8f05a318c759",
+            "source": {
+              "cell": "f88b26c5-cae5-41b9-a9c7-0130199e911f"
+            },
+            "target": {
+              "cell": "13ceaa95-7483-4bc7-8f3e-fb557e692797"
+            },
+            "labels": [
+              "Notification "
+            ]
+          },
+          {
             "position": {
-              "x": 210,
-              "y": -270
+              "x": 230,
+              "y": -264.3854166666686
             },
             "size": {
               "width": 80,
@@ -2910,8 +3091,8 @@
           },
           {
             "position": {
-              "x": 190,
-              "y": -467
+              "x": 160,
+              "y": -440
             },
             "size": {
               "width": 120,
@@ -2944,6 +3125,40 @@
               "storesCredentials": false,
               "isEncrypted": false,
               "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 170,
+              "y": -571.5625
+            },
+            "size": {
+              "width": 80,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Notification\ninbox"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "ae7a9a41-58f0-4702-b2a1-ff8e5fefca3a",
+            "zIndex": 37,
+            "data": {
+              "type": "tm.Process",
+              "name": "Notification\ninbox",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
               "hasOpenThreats": false,
               "threats": []
             }
