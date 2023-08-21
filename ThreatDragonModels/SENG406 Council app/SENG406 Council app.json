@@ -212,8 +212,8 @@
                 "text": "Applicant"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 3,
+                "stroke": "#333333",
+                "strokeWidth": 1,
                 "strokeDasharray": null
               }
             },
@@ -228,7 +228,7 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "90661720-cf48-4bb6-9b63-02bd51265bcc",
@@ -259,11 +259,11 @@
                 {
                   "id": "5710a2fd-faa8-4480-baf8-bc2978b8b29f",
                   "title": "Spoofing",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "Malicious actors can impersonate legitimate users to gain unauthorized access to the application or to perform actions they shouldn't be able to.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "* Require users to sign in to use the application\n* Enforce strong password rules such as 10 characters and at least one of capital letter, number, special character.\n* Require MFA\n",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 48,
@@ -468,10 +468,6 @@
               "cell": "3a262796-b9d9-488a-938d-0ae1de683a4e"
             },
             "vertices": [
-              {
-                "x": 630,
-                "y": 90
-              },
               {
                 "x": 480,
                 "y": 70
@@ -1506,9 +1502,204 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "894673ac-7f0d-4fe2-bd19-766a3116883a",
+            "source": {
+              "cell": "62f60685-0a58-44e4-b573-1e5d2d4c6218"
+            },
+            "target": {
+              "cell": "19855089-b57c-4518-a10a-c59d7804f815"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "35e61c9e-024b-4605-98f3-ad052a161588",
+            "source": {
+              "cell": "3a262796-b9d9-488a-938d-0ae1de683a4e"
+            },
+            "target": {
+              "cell": "aabdabd3-aff6-400a-b7e7-61ad915781b6"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Application details",
+              "description": "Updated application details to be saved to the datastore",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "68a4d1a0-bd6b-4145-a432-7d5bba90cebe",
+            "source": {
+              "cell": "19855089-b57c-4518-a10a-c59d7804f815"
+            },
+            "target": {
+              "cell": "3a262796-b9d9-488a-938d-0ae1de683a4e"
+            },
+            "labels": [
+              "Application details"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Application details",
+              "description": "Original details of the application that is to be edited,",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "ba0d0793-d78e-49a0-9367-50c050a47ac2",
+            "source": {
+              "cell": "3a262796-b9d9-488a-938d-0ae1de683a4e"
+            },
+            "target": {
+              "cell": "19855089-b57c-4518-a10a-c59d7804f815"
+            },
+            "vertices": [
+              {
+                "x": 520,
+                "y": -90
+              }
+            ],
+            "labels": [
+              "Application details"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Application ID",
+              "description": "The unique identifier of the application to be edited.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "3e398765-3fce-40a7-b4dd-bd3eee6cca74",
+            "source": {
+              "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
+            },
+            "target": {
+              "cell": "19855089-b57c-4518-a10a-c59d7804f815"
+            },
+            "labels": [
+              "Application ID"
+            ]
+          },
+          {
             "position": {
-              "x": 753.5,
-              "y": -81.05208333333529
+              "x": 210,
+              "y": -270
             },
             "size": {
               "width": 80,
@@ -1519,8 +1710,8 @@
                 "text": "Application\nSubmission"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 3,
+                "stroke": "#333333",
+                "strokeWidth": 1,
                 "strokeDasharray": null
               }
             },
@@ -1535,16 +1726,16 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "6fbdba9f-a387-40c2-ac9c-6b73f6a9fb68",
                   "title": "Impersonating",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "Malicious actors could impersonate legitimate applicants during the application submission process",
-                  "mitigation": "",
+                  "mitigation": "Require authentication for submitting an application",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 8,
@@ -2143,8 +2334,8 @@
           },
           {
             "position": {
-              "x": 226,
-              "y": -61.05208333333529
+              "x": 210,
+              "y": -62.46874999999892
             },
             "size": {
               "width": 120,
@@ -2183,8 +2374,8 @@
           },
           {
             "position": {
-              "x": 630,
-              "y": 166.16666666666694
+              "x": 555.9999999999998,
+              "y": 195.00000000000065
             },
             "size": {
               "width": 80,
@@ -2195,8 +2386,8 @@
                 "text": "Additional\ndocument\nrequest"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 3,
+                "stroke": "#333333",
+                "strokeWidth": 1,
                 "strokeDasharray": null
               }
             },
@@ -2211,16 +2402,16 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "aa8714ed-5259-4fb4-84f3-65ddf364102f",
                   "title": "Spoofing of request",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "Attackers can impersonate council members to send fraudulent document requests",
-                  "mitigation": "",
+                  "mitigation": "All document requested are submitted to the website directly preventing them being sent to an attacker.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 62,
@@ -2242,11 +2433,11 @@
                 {
                   "id": "66bed33f-d7db-4553-85c7-4194e9a5c7a9",
                   "title": "Sensitive content exposure",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "Document requests might contain sensitive information that could be exposed to unauthorized parties",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "All information about a document request is contained within the application.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 64,
@@ -2357,8 +2548,8 @@
           },
           {
             "position": {
-              "x": 984.9999999999998,
-              "y": -141.0520833333353
+              "x": 1034,
+              "y": -121.05208333333529
             },
             "size": {
               "width": 60,
@@ -2453,6 +2644,40 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 731.9999999999998,
+              "y": -108.98958333333385
+            },
+            "size": {
+              "width": 80,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Update\nApplication"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "19855089-b57c-4518-a10a-c59d7804f815",
+            "zIndex": 34,
+            "data": {
+              "type": "tm.Process",
+              "name": "Update\nApplication",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
               "hasOpenThreats": false,
               "threats": []
             }
