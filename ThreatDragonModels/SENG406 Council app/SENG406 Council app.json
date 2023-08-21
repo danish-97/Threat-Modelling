@@ -737,7 +737,12 @@
             "target": {
               "cell": "b79aa5bf-4764-481c-bc51-a48032442827"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 580,
+                "y": 400
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -981,8 +986,8 @@
             },
             "vertices": [
               {
-                "x": 1490,
-                "y": -20
+                "x": 1520,
+                "y": -10
               }
             ]
           },
@@ -1189,68 +1194,6 @@
             "vertices": []
           },
           {
-            "shape": "trust-broundary-curve",
-            "attrs": {
-              "line": {
-                "targetMarker": "",
-                "sourceMarker": ""
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "labels": [
-              "AWS hosting provider"
-            ],
-            "data": {
-              "type": "tm.Boundary",
-              "name": "AWS hosting provider",
-              "description": "Third party network that the site's network is deployed on.",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "8ab2e83e-fed5-4b5d-9d52-d48ceec2d30c",
-            "source": {
-              "x": 1490,
-              "y": 560
-            },
-            "target": {
-              "x": 1490,
-              "y": 560
-            },
-            "vertices": [
-              {
-                "x": 300,
-                "y": 390
-              },
-              {
-                "x": 110,
-                "y": -230
-              },
-              {
-                "x": 110,
-                "y": -610
-              },
-              {
-                "x": 630,
-                "y": -590
-              },
-              {
-                "x": 700,
-                "y": -360
-              },
-              {
-                "x": 1510,
-                "y": -250
-              },
-              {
-                "x": 1690,
-                "y": 320
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -1304,12 +1247,12 @@
             },
             "vertices": [
               {
-                "x": 1900,
-                "y": 50
+                "x": 1500,
+                "y": 210
               },
               {
-                "x": 2020,
-                "y": 480
+                "x": 1330,
+                "y": 540
               }
             ]
           },
@@ -1464,8 +1407,8 @@
             },
             "vertices": [
               {
-                "x": 520,
-                "y": -90
+                "x": 540,
+                "y": -70
               }
             ]
           },
@@ -2105,6 +2048,68 @@
             ]
           },
           {
+            "shape": "trust-broundary-curve",
+            "attrs": {
+              "line": {
+                "targetMarker": "",
+                "sourceMarker": ""
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "labels": [
+              "AWS hosting provider"
+            ],
+            "data": {
+              "type": "tm.Boundary",
+              "name": "AWS hosting provider",
+              "description": "Third party network that the site's network is deployed on.",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "8ab2e83e-fed5-4b5d-9d52-d48ceec2d30c",
+            "source": {
+              "x": 1470,
+              "y": 500
+            },
+            "target": {
+              "x": 1480,
+              "y": 500
+            },
+            "vertices": [
+              {
+                "x": 300,
+                "y": 390
+              },
+              {
+                "x": 110,
+                "y": -230
+              },
+              {
+                "x": 110,
+                "y": -610
+              },
+              {
+                "x": 630,
+                "y": -590
+              },
+              {
+                "x": 700,
+                "y": -360
+              },
+              {
+                "x": 1530,
+                "y": -250
+              },
+              {
+                "x": 1690,
+                "y": 320
+              }
+            ]
+          },
+          {
             "position": {
               "x": 230,
               "y": -264.3854166666686
@@ -2681,8 +2686,8 @@
           },
           {
             "position": {
-              "x": 1690,
-              "y": -184.38541666666862
+              "x": 1780,
+              "y": -131.0520833333353
             },
             "size": {
               "width": 100,
@@ -3072,8 +3077,8 @@
           },
           {
             "position": {
-              "x": 731.9999999999998,
-              "y": -108.98958333333385
+              "x": 761.9999999999998,
+              "y": -93.98958333333385
             },
             "size": {
               "width": 80,
