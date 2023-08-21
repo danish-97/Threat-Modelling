@@ -26,8 +26,8 @@
         "cells": [
           {
             "position": {
-              "x": 1190.0000000000005,
-              "y": 197.81249999999955
+              "x": 1070.0000000000005,
+              "y": 16.875000000000682
             },
             "size": {
               "width": 380,
@@ -101,12 +101,12 @@
           },
           {
             "position": {
-              "x": 984.9999999999998,
-              "y": -151.99999999999892
+              "x": 885.0000000000005,
+              "y": -131.0520833333353
             },
             "size": {
-              "width": 510,
-              "height": 239.0625
+              "width": 750,
+              "height": 351.5625
             },
             "shape": "trust-boundary-box",
             "attrs": {
@@ -114,8 +114,8 @@
                 "text": "User management"
               }
             },
-            "id": "9d0211e9-bccb-4a28-8efd-0d7d312698c1",
             "zIndex": -1,
+            "id": "9d0211e9-bccb-4a28-8efd-0d7d312698c1",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "User management",
@@ -554,8 +554,8 @@
             },
             "vertices": [
               {
-                "x": 1340,
-                "y": 250
+                "x": 1220,
+                "y": 110
               }
             ]
           },
@@ -765,7 +765,13 @@
             },
             "target": {
               "cell": "e00fe644-311e-4790-ac36-c8786545f10b"
-            }
+            },
+            "vertices": [
+              {
+                "x": 1370,
+                "y": 280
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -917,7 +923,12 @@
             "target": {
               "cell": "7285e0b4-8556-49f1-b968-432177da5988"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 1490,
+                "y": -20
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -986,8 +997,8 @@
             },
             "vertices": [
               {
-                "x": 1140,
-                "y": 620
+                "x": 1020,
+                "y": 439.06250000000114
               }
             ]
           },
@@ -1031,8 +1042,8 @@
             },
             "vertices": [
               {
-                "x": 1730,
-                "y": 90
+                "x": 1670,
+                "y": 50
               }
             ]
           },
@@ -1076,8 +1087,8 @@
             },
             "vertices": [
               {
-                "x": 1630,
-                "y": 160
+                "x": 1620,
+                "y": 70
               }
             ]
           },
@@ -1227,7 +1238,16 @@
             "target": {
               "cell": "77277804-d3be-4aad-957c-a09039a48cd6"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 1900,
+                "y": 50
+              },
+              {
+                "x": 2020,
+                "y": 480
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1366,15 +1386,15 @@
               "threats": []
             },
             "id": "68a4d1a0-bd6b-4145-a432-7d5bba90cebe",
+            "labels": [
+              "Application details"
+            ],
             "source": {
               "cell": "19855089-b57c-4518-a10a-c59d7804f815"
             },
             "target": {
               "cell": "3a262796-b9d9-488a-938d-0ae1de683a4e"
-            },
-            "labels": [
-              "Application details"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -1405,6 +1425,9 @@
               "threats": []
             },
             "id": "ba0d0793-d78e-49a0-9367-50c050a47ac2",
+            "labels": [
+              "Application details"
+            ],
             "source": {
               "cell": "3a262796-b9d9-488a-938d-0ae1de683a4e"
             },
@@ -1416,9 +1439,6 @@
                 "x": 520,
                 "y": -90
               }
-            ],
-            "labels": [
-              "Application details"
             ]
           },
           {
@@ -1486,15 +1506,15 @@
               "threats": []
             },
             "id": "3e398765-3fce-40a7-b4dd-bd3eee6cca74",
+            "labels": [
+              "Application details"
+            ],
             "source": {
               "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
             },
             "target": {
               "cell": "19855089-b57c-4518-a10a-c59d7804f815"
-            },
-            "labels": [
-              "Application details"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -1536,8 +1556,8 @@
             },
             "vertices": [
               {
-                "x": 1265,
-                "y": 220
+                "x": 1160,
+                "y": -10
               }
             ]
           },
@@ -1581,8 +1601,8 @@
             },
             "vertices": [
               {
-                "x": 1210,
-                "y": 220
+                "x": 1110,
+                "y": -20
               }
             ]
           },
@@ -1615,16 +1635,16 @@
               "threats": []
             },
             "id": "0d24e2d1-2327-4fe2-ba4a-68d14b585b1b",
+            "labels": [
+              "Credentials"
+            ],
             "source": {
               "cell": "9e1b450a-0788-4ec8-bce9-25caa959fc85"
             },
             "target": {
               "cell": "6c51a5e7-ef0b-4681-a83e-8418175befe4"
             },
-            "vertices": [],
-            "labels": [
-              "Credentials"
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -1655,16 +1675,16 @@
               "threats": []
             },
             "id": "400b91c3-1e09-4b31-8a13-03db6795c4d5",
+            "labels": [
+              "User\nDetails"
+            ],
             "source": {
               "cell": "9e1b450a-0788-4ec8-bce9-25caa959fc85"
             },
             "target": {
               "cell": "b017a769-880d-4853-a280-172a3d69b046"
             },
-            "vertices": [],
-            "labels": [
-              "User\nDetails"
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -1695,6 +1715,9 @@
               "threats": []
             },
             "id": "850ccd9b-a119-4e02-8777-874af7e8a9e2",
+            "labels": [
+              "Token"
+            ],
             "source": {
               "cell": "6c51a5e7-ef0b-4681-a83e-8418175befe4"
             },
@@ -1706,9 +1729,6 @@
                 "x": 1190,
                 "y": -480
               }
-            ],
-            "labels": [
-              "Token"
             ]
           },
           {
@@ -1740,15 +1760,15 @@
               "threats": []
             },
             "id": "13923285-8a89-46b9-85e6-063fd5f10b23",
+            "labels": [
+              "Token"
+            ],
             "source": {
               "cell": "b017a769-880d-4853-a280-172a3d69b046"
             },
             "target": {
               "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
             },
-            "labels": [
-              "Token"
-            ],
             "vertices": []
           },
           {
@@ -1940,8 +1960,8 @@
           },
           {
             "position": {
-              "x": 1750,
-              "y": 355.1458333333331
+              "x": 1760,
+              "y": 156.89583333333542
             },
             "size": {
               "width": 80,
@@ -2001,8 +2021,8 @@
           },
           {
             "position": {
-              "x": 1494.9999999999998,
-              "y": 285.0000000000007
+              "x": 1304.9999999999998,
+              "y": 115.00000000000065
             },
             "size": {
               "width": 60,
@@ -2088,8 +2108,8 @@
           },
           {
             "position": {
-              "x": 1499.9999999999998,
-              "y": 210.00000000000065
+              "x": 1379.9999999999998,
+              "y": 65.00000000000065
             },
             "size": {
               "width": 50,
@@ -2175,8 +2195,8 @@
           },
           {
             "position": {
-              "x": 1215,
-              "y": 8.94791666666471
+              "x": 1190.0000000000005,
+              "y": -93.98958333333385
             },
             "size": {
               "width": 100,
@@ -2215,8 +2235,8 @@
           },
           {
             "position": {
-              "x": 1390,
-              "y": -131.0520833333353
+              "x": 1429.9999999999998,
+              "y": -93.98958333333385
             },
             "size": {
               "width": 50,
@@ -2328,8 +2348,8 @@
           },
           {
             "position": {
-              "x": 1700,
-              "y": -148.98958333333385
+              "x": 1690,
+              "y": -184.38541666666862
             },
             "size": {
               "width": 100,
@@ -2516,8 +2536,8 @@
           },
           {
             "position": {
-              "x": 1315,
-              "y": 315.93749999999955
+              "x": 1104,
+              "y": 60.000000000000654
             },
             "size": {
               "width": 60,
@@ -2603,8 +2623,8 @@
           },
           {
             "position": {
-              "x": 1034,
-              "y": -121.05208333333529
+              "x": 934,
+              "y": -98.98958333333385
             },
             "size": {
               "width": 60,
@@ -2622,8 +2642,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "b017a769-880d-4853-a280-172a3d69b046",
             "zIndex": 31,
+            "id": "b017a769-880d-4853-a280-172a3d69b046",
             "data": {
               "type": "tm.Process",
               "name": "Register",
@@ -2656,8 +2676,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "aabdabd3-aff6-400a-b7e7-61ad915781b6",
             "zIndex": 32,
+            "id": "aabdabd3-aff6-400a-b7e7-61ad915781b6",
             "data": {
               "type": "tm.Process",
               "name": "Submitted \napplications",
@@ -2704,8 +2724,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "9e1b450a-0788-4ec8-bce9-25caa959fc85",
             "zIndex": 33,
+            "id": "9e1b450a-0788-4ec8-bce9-25caa959fc85",
             "data": {
               "type": "tm.Actor",
               "name": "Unauthorized\nApplicant",
@@ -2738,8 +2758,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "19855089-b57c-4518-a10a-c59d7804f815",
             "zIndex": 34,
+            "id": "19855089-b57c-4518-a10a-c59d7804f815",
             "data": {
               "type": "tm.Process",
               "name": "Update\nApplication",
