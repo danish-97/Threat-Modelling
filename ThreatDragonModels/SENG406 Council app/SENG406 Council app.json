@@ -189,7 +189,7 @@
                   "severity": "Medium",
                   "type": "Repudiation",
                   "description": "The threat of staff members denying actions relating to calling the client. ",
-                  "mitigation": "Calls are performed using a council phone",
+                  "mitigation": "Calls are performed using a council phone.\nCalls are recorded and kept for audit purposes.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 90,
