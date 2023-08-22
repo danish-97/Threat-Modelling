@@ -4160,15 +4160,15 @@
               "threats": []
             },
             "id": "35e61c9e-024b-4605-98f3-ad052a161588",
+            "labels": [
+              "Application \ndetails"
+            ],
             "source": {
               "cell": "3a262796-b9d9-488a-938d-0ae1de683a4e"
             },
             "target": {
               "cell": "aabdabd3-aff6-400a-b7e7-61ad915781b6"
-            },
-            "labels": [
-              "Application \ndetails"
-            ]
+            }
           },
           {
             "shape": "flow",
@@ -4839,6 +4839,9 @@
               "threats": []
             },
             "id": "443e010d-a501-45b5-be53-acf23bd6160b",
+            "labels": [
+              "User\nDetails"
+            ],
             "source": {
               "cell": "43a2b4b9-ff14-4b16-81e9-e82755803ec8"
             },
@@ -4854,9 +4857,6 @@
                 "x": 940,
                 "y": 30
               }
-            ],
-            "labels": [
-              "User\nDetails"
             ]
           },
           {
@@ -5058,6 +5058,9 @@
               "threats": []
             },
             "id": "abd0b6bd-1436-45fb-8b80-45b67592eff8",
+            "labels": [
+              "Notification \ndetails"
+            ],
             "source": {
               "cell": "b79aa5bf-4764-481c-bc51-a48032442827"
             },
@@ -5073,9 +5076,6 @@
                 "x": 150,
                 "y": -230
               }
-            ],
-            "labels": [
-              "Notification \ndetails"
             ]
           },
           {
@@ -5116,6 +5116,45 @@
             "target": {
               "cell": "aabdabd3-aff6-400a-b7e7-61ad915781b6"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "User details",
+              "description": "The details of the user who is registering to the application",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "74489c15-d3f0-4416-beea-c390151fd5f5",
+            "source": {
+              "cell": "b017a769-880d-4853-a280-172a3d69b046"
+            },
+            "target": {
+              "cell": "1c3ee008-5d88-4cad-9d66-4165dea3e0d8"
+            },
+            "labels": [
+              "User details"
+            ]
           },
           {
             "position": {
@@ -6012,7 +6051,86 @@
               "reasonOutOfScope": "",
               "privilegeLevel": "",
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "ed2abfaf-fa46-4991-b0a3-5a27422eed0a",
+                  "title": "Impersonating",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate a legitimate applicant by sending falsified registration data to the database",
+                  "mitigation": "* Implement strong user authentication, such as strong password requirements and MFA\n* Implement validation mechanisms to ensure that authenticity of registration data",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 94,
+                  "score": ""
+                },
+                {
+                  "id": "bffe218b-9f8a-4d1d-9ee2-2c39f31bfbf9",
+                  "title": "Registration data",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attackers may modify or manipulate registration data during transmission",
+                  "mitigation": "Implement data integrity checks such as checksums to detect tampering during transmission",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 95,
+                  "score": ""
+                },
+                {
+                  "id": "af7a59ae-615f-4332-a78d-25ca2e35a9ef",
+                  "title": "Repudiation of registration",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "An unauthorized applicant could deny having submitted specific registration data, which could create difficulties in proving the origin of the registration",
+                  "mitigation": "Maintain detailed logs of registration activities, including timestamps and user-related information",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 96,
+                  "score": ""
+                },
+                {
+                  "id": "ef48392c-bf8d-4608-96ec-71c96d970f46",
+                  "title": "Sensitive data exposure",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Sensitive registration data, such as applicant details and support documents, could be exposed during transmission.",
+                  "mitigation": "Apply HTTPS protocol to ensure that the sensitive data is protected during transmission",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 97,
+                  "score": ""
+                },
+                {
+                  "id": "3ee4fc91-95a7-4dcd-a61c-7ebe8931524e",
+                  "title": "Registration disruption",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Attackers might flood the system with fake or excessive registration attempts, thereby disrupting the registration process",
+                  "mitigation": "Implement rate limiting, CAPTCHA challenges, and request validation to prevent automated registration attacks",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 98,
+                  "score": ""
+                },
+                {
+                  "id": "f116e9f8-0c1a-4029-addb-382963473d0e",
+                  "title": "False registration",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Attackers could manipulate registration data to gain unauthorized access or privileges within the system.",
+                  "mitigation": "* Validate and sanitize incoming registration data\n* Implement proper authorization checks, using the least principle privilege\n* Use secure authentication mechanisms, such as MFA",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 99,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -6059,6 +6177,32 @@
                   "new": false,
                   "number": 91,
                   "score": ""
+                },
+                {
+                  "id": "5e10e5c2-f5a9-4f1b-9453-b26b91787e7c",
+                  "title": "Repudiation of submission",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "An applicant may deny having submitted specific submission data, thereby creating difficulties in proving the origin of the submission",
+                  "mitigation": "Maintain detailed logs of submission activities, including timestamps and applicant related details",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 103,
+                  "score": ""
+                },
+                {
+                  "id": "c43d18ab-e771-4498-b64d-b4fde9693395",
+                  "title": "Impersonating",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Attackers might impersonate a legitimate applicant and send falsified data to the application datastore.",
+                  "mitigation": "Implement strong authentication mechanisms to verify the identity of the applicant, such as MFA",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 109,
+                  "score": ""
                 }
               ]
             }
@@ -6094,7 +6238,34 @@
               "reasonOutOfScope": "",
               "providesAuthentication": false,
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "96a510f6-7bde-4d12-8afa-2efac4a40f10",
+                  "title": "Impersonating",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An unauthorized applicant could impersonate an authorized applicant to access application documents and details",
+                  "mitigation": "Provide login tokens to every authorized applicant and ensure that only an applicant with such token can access application documents",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 92,
+                  "score": ""
+                },
+                {
+                  "id": "d3dd05b3-c610-45c7-a259-5140e1e7d0f5",
+                  "title": "Repudiation of Action",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Applicants can deny having accessed or manipulated application details and documents, even if they have done so",
+                  "mitigation": "* Ensure that only applicants with log in tokens can access or manipulate application details and documents.\n* Log the actions of an authenticated applicant to provide audit trails",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 93,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -6128,7 +6299,47 @@
               "reasonOutOfScope": "",
               "privilegeLevel": "",
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "38dc4554-dbdb-4960-90e6-b0da97512b56",
+                  "title": "Impersonating",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Attackers might impersonate a legitimate applicant and send falsified update data to the application datastore.",
+                  "mitigation": "Ensure that only applicants with an auth token can access or manipulate application data",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 100,
+                  "score": ""
+                },
+                {
+                  "id": "5113f676-86c2-4456-992a-0caad3fb5f6d",
+                  "title": "Data Exposure",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Sensitive update data could be exposed during transmission, leading to unauthorized access or data leakage.",
+                  "mitigation": "* Use HTTPS protocols to encrypt the data during transmission\n* Ensure that only applicants with auth tokens can access or manipulate the application data",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 101,
+                  "score": ""
+                },
+                {
+                  "id": "5d278f62-3a10-4fad-b822-8a2b5e54f38d",
+                  "title": "Repudiation of Updates",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "An applicant may deny having submitted specific update data, creating difficulties in proving the origin of the updates",
+                  "mitigation": "Maintain detailed logs of update activities, including timestamps and applicant-related information",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 102,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -6157,12 +6368,39 @@
             "data": {
               "type": "tm.Process",
               "name": "Email \nService",
-              "description": "",
+              "description": "The service through which applicants are notified about unread correspondence in the application",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "a5dde741-9bc8-47bb-84a5-f77db61c8b85",
+                  "title": "Data Exposure",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Sensitive application data could be exposed during transmission or sent to the wrong person by mistake",
+                  "mitigation": "* Emails do not contain any sensitive information, they are only sent to notify about correspondence in the application.\n* All correspondence involving the discussion of the application will be held within the application (e.g., requesting for additional documents, submitting additional documents, etc)",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 104,
+                  "score": ""
+                },
+                {
+                  "id": "b6ff4cba-482a-4277-9e97-7ad6f4274c6a",
+                  "title": "Repudiation of receiving emails",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Applicants may deny having received emails notifying them of having unread correspondence, even if they have received them",
+                  "mitigation": "Maintain detailed logs about emails sent, including timestamps and applicant details",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 108,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -6236,7 +6474,34 @@
               "reasonOutOfScope": "",
               "privilegeLevel": "",
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "d592fa0f-a5d5-46fc-9228-1fb84fe9c720",
+                  "title": "Data Exposure",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Sensitive update data could be exposed during transmission, leading to unauthorized access or data leakage.",
+                  "mitigation": "Only applicants that have auth tokens can access their application notifications, and the notifications stay within the app",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 106,
+                  "score": ""
+                },
+                {
+                  "id": "70675779-38e8-4853-8edb-b2476dfcbdb9",
+                  "title": "Repudiation of notifications",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Applicants can deny having received notifications",
+                  "mitigation": "Maintain detailed logs about the notifications including the timestamps and the applicant related details",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 107,
+                  "score": ""
+                }
+              ]
             }
           }
         ],
@@ -6245,6 +6510,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Jack",
-    "threatTop": 91
+    "threatTop": 109
   }
 }
